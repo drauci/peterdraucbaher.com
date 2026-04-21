@@ -1,0 +1,129 @@
+
+@import "blog/post";
+@import "blog/blog";
+
+.share-links-block {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    .share-links a {
+        border-radius: 50%;
+        width: 28px;
+        height: 28px;
+        font-size: .8rem;
+        box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.2);
+        margin: 2px;
+        &:not(:hover) {
+            background: none;
+            color: var(--porto-heading-color);
+        }
+    }
+    h5 {
+        margin: side-values(0 15px 0 0);
+        font-size: .8em;
+        font-weight: 700;
+        text-transform: uppercase;
+    }
+}
+
+/* Filters */
+.sort-source {
+    clear: both;
+
+    > li > a {
+        display: inline-block;
+        cursor: pointer;
+        padding: 6px 12px;
+    }
+}
+
+.sort-source-style-2 {
+    background: var(--porto-primary-color);
+    margin: 0 auto;
+    > li {
+        float: none;
+        display: inline-block;
+        > a {
+            &, &:focus, &:hover {
+                background: none;
+                color: #FFF;
+                border-radius: 0;
+                margin: 0;
+                padding: 18px 28px;
+                position: relative;
+            }
+            &:after {
+                @include transition (margin 0.3s);
+                width: 0;
+                height: 0;
+                border-left: 20px solid transparent;
+                border-right: 20px solid transparent;
+                border-top: 15px solid var(--porto-primary-color);
+                content: " ";
+                display: block;
+                position: absolute;
+                #{$left}: 50%;
+                margin-#{$left}: -20px;
+                margin-top: 0;
+                opacity: 0;
+                z-index: 1;
+            }
+        }
+        &.active {
+            > a {
+                &, &:focus, &:hover {
+                    background: transparent;
+                }
+                &:after {
+                    opacity: 1;
+                    margin-top: 18px;
+                }
+            }
+        }
+    }
+}
+
+.sort-source-style-3 {
+    margin-bottom: 2rem;
+    justify-content: center;
+    font-size: .8em;
+    text-transform: uppercase;
+    > li {
+        > a {
+            color: var(--porto-body-color);
+        }
+        &.active {
+            > a {
+                background: none !important;
+                border-bottom: 3px solid var(--porto-primary-color);
+                border-radius: 0;
+                color: var(--porto-primary-color)
+            }
+        }
+    }
+}
+
+@media #{$screen-medium} {
+
+    .sort-source-style-2 {
+        > li {
+            display: block;
+            &.active {
+                > a {
+                    &:after {
+                        display: none !important;
+                    }
+                }
+            }
+        }
+    }
+}
+
+.ajax-box {
+    .bounce-loader,
+    .porto-ajax-loading {
+        z-index: 1;
+    }
+}
+
+@import "page/page";

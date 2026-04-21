@@ -1,0 +1,1 @@
+.revealDirTop:after{animation-name:blockSlideToTop}@keyframes blockSlideToTop{0%{top:auto;bottom:0;height:0%}45%{top:auto;bottom:0;height:100%}55%{top:0;bottom:auto;height:100%}to{top:0;bottom:auto;height:0%}}

@@ -1,0 +1,32 @@
+// DIRECTIONAL
+// ---------------------------------------------------------------
+$rtl: 0 !default;
+$dir: ltr !default;
+
+@import "../theme/theme-imports";
+
+/* rating filter */
+.widget_rating_filter {
+    > ul {
+        li {
+            line-height: 1;
+            margin-bottom: .75rem;
+            a {
+                padding-top: 0;
+                padding-bottom: 0;
+            }
+        }
+    }
+    .star-rating {
+        display: block;
+        float: $left;
+        line-height: inherit;
+        height: 2em;
+    }
+    .wc-layered-nav-rating a {
+        display: block;
+        @include clearfix();
+        text-align: $right;
+        color: var(--porto-body-color-light-5);
+    }
+}

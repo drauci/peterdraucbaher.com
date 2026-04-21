@@ -1,0 +1,29 @@
+// Porto Price Filter widget
+.porto_widget_price_filter {
+    .fields {
+        display: flex;
+        align-items: center;
+        flex-wrap: wrap;
+        input {
+            flex: 45%;
+            text-align: center;
+        }
+        span {
+            text-align: center;
+            flex: 5%;
+            margin: 0 !important;
+        }
+        button {
+            margin-top: 1rem;
+            flex: 1;
+            color: var(--porto-dark-color);
+            border-color: var(--porto-light-dark-5);
+            background-color: var(--porto-light-dark-5);
+            &:hover {
+                color: var(--porto-body-bg);
+                border-color: var(--porto-heading-color);
+                background-color: var(--porto-heading-color);
+            }
+        }
+    }
+}

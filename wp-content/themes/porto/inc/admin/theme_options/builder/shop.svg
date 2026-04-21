@@ -1,0 +1,74 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="158" height="180" viewBox="0 0 158 180">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #e7e7e7;
+        fill-rule: evenodd;
+      }
+
+      .cls-2 {
+        fill: #ccc;
+      }
+
+      .cls-3 {
+        fill: #9a9a9a;
+      }
+
+      .cls-4 {
+        fill: #e4e4e4;
+      }
+    </style>
+  </defs>
+  <image id="Background" width="158" height="180" xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAAJ4AAAC0CAYAAABlspUrAAAB4ElEQVR4nO3SQREAIAzAsIF/z8MF/SQSej27uwOfXcEpGI+E8UgYj4TxSBiPhPFIGI+E8UgYj4TxSBiPhPFIGI+E8UgYj4TxSBiPhPFIGI+E8UgYj4TxSBiPhPFIGI+E8UgYj4TxSBiPhPFIGI+E8UgYj4TxSBiPhPFIGI+E8UgYj4TxSBiPhPFIGI+E8UgYj4TxSBiPhPFIGI+E8UgYj4TxSBiPhPFIGI+E8UgYj4TxSBiPhPFIGI+E8UgYj4TxSBiPhPFIGI+E8UgYj4TxSBiPhPFIGI+E8UgYj4TxSBiPhPFIGI+E8UgYj4TxSBiPhPFIGI+E8UgYj4TxSBiPhPFIGI+E8UgYj4TxSBiPhPFIGI+E8UgYj4TxSBiPhPFIGI+E8UgYj4TxSBiPhPFIGI+E8UgYj4TxSBiPhPFIGI+E8UgYj4TxSBiPhPFIGI+E8UgYj4TxSBiPhPFIGI+E8UgYj4TxSBiPhPFIGI+E8UgYj4TxSBiPhPFIGI+E8UgYj4TxSBiPhPFIGI+E8UgYj4TxSBiPhPFIGI+E8UgYj4TxSBiPhPFIGI+E8UgYj4TxSBiPhPFIGI+E8UgYj4TxSBiPhPFIGI+E8UgYj4TxSBiPhPFIGI+E8UgYj4Tx+G9mHns2BWRDPiAiAAAAAElFTkSuQmCC"/>
+  <path class="cls-1" d="M7,4H151a3,3,0,0,1,3,3V173a3,3,0,0,1-3,3H7a3,3,0,0,1-3-3V7A3,3,0,0,1,7,4ZM6,17H152V174H6V17Z"/>
+  <circle class="cls-2" cx="12.5" cy="10.5" r="2.5"/>
+  <circle id="Ellipse_1_copy" data-name="Ellipse 1 copy" class="cls-2" cx="19.5" cy="10.5" r="2.5"/>
+  <circle id="Ellipse_1_copy_2" data-name="Ellipse 1 copy 2" class="cls-2" cx="26.5" cy="10.5" r="2.5"/>
+  <rect id="Rounded_Rectangle_1" data-name="Rounded Rectangle 1" class="cls-2" x="107" y="9" width="40" height="3" rx="1.5" ry="1.5"/>
+  <rect id="Rectangle_3_copy" data-name="Rectangle 3 copy" class="cls-3" x="45" y="30" width="30" height="22"/>
+  <rect id="Rectangle_3_copy_6" data-name="Rectangle 3 copy 6" class="cls-4" x="13" y="30" width="27" height="7"/>
+  <rect id="Rectangle_3_copy_7" data-name="Rectangle 3 copy 7" class="cls-4" x="13" y="41" width="20" height="4"/>
+  <rect id="Rectangle_3_copy_8" data-name="Rectangle 3 copy 8" class="cls-4" x="13" y="47" width="20" height="4"/>
+  <rect id="Rectangle_3_copy_9" data-name="Rectangle 3 copy 9" class="cls-4" x="13" y="53" width="20" height="4"/>
+  <rect id="Rectangle_3_copy_10" data-name="Rectangle 3 copy 10" class="cls-4" x="13" y="64" width="20" height="4"/>
+  <rect id="Rectangle_3_copy_20" data-name="Rectangle 3 copy 20" class="cls-4" x="13" y="70" width="20" height="4"/>
+  <rect id="Rectangle_3_copy_21" data-name="Rectangle 3 copy 21" class="cls-4" x="13" y="76" width="20" height="4"/>
+  <rect id="Rectangle_3_copy_22" data-name="Rectangle 3 copy 22" class="cls-4" x="13" y="89" width="20" height="4"/>
+  <rect id="Rectangle_3_copy_22-2" data-name="Rectangle 3 copy 22" class="cls-4" x="13" y="95" width="20" height="4"/>
+  <rect id="Rectangle_3_copy_22-3" data-name="Rectangle 3 copy 22" class="cls-4" x="13" y="101" width="20" height="4"/>
+  <rect id="Rectangle_3_copy_11" data-name="Rectangle 3 copy 11" class="cls-3" x="45" y="54" width="25" height="4"/>
+  <rect id="Rectangle_3_copy_14" data-name="Rectangle 3 copy 14" class="cls-4" x="45" y="60" width="24" height="2"/>
+  <rect id="Rectangle_3_copy_15" data-name="Rectangle 3 copy 15" class="cls-4" x="45" y="63" width="24" height="2"/>
+  <rect id="Rectangle_3_copy_2" data-name="Rectangle 3 copy 2" class="cls-3" x="80" y="30" width="30" height="22"/>
+  <rect id="Rectangle_3_copy_12" data-name="Rectangle 3 copy 12" class="cls-3" x="80" y="54" width="25" height="4"/>
+  <rect id="Rectangle_3_copy_16" data-name="Rectangle 3 copy 16" class="cls-4" x="80" y="60" width="24" height="2"/>
+  <rect id="Rectangle_3_copy_16-2" data-name="Rectangle 3 copy 16" class="cls-4" x="80" y="63" width="24" height="2"/>
+  <rect id="Rectangle_3_copy_3" data-name="Rectangle 3 copy 3" class="cls-3" x="116" y="30" width="30" height="22"/>
+  <rect id="Rectangle_3_copy_13" data-name="Rectangle 3 copy 13" class="cls-3" x="116" y="54" width="25" height="4"/>
+  <rect id="Rectangle_3_copy_17" data-name="Rectangle 3 copy 17" class="cls-4" x="116" y="60" width="24" height="2"/>
+  <rect id="Rectangle_3_copy_17-2" data-name="Rectangle 3 copy 17" class="cls-4" x="116" y="63" width="24" height="2"/>
+  <rect id="Rectangle_3_copy_4" data-name="Rectangle 3 copy 4" class="cls-3" x="45" y="75" width="30" height="22"/>
+  <rect id="Rectangle_3_copy_18" data-name="Rectangle 3 copy 18" class="cls-3" x="45" y="99" width="25" height="4"/>
+  <rect id="Rectangle_3_copy_18-2" data-name="Rectangle 3 copy 18" class="cls-4" x="45" y="105" width="24" height="2"/>
+  <rect id="Rectangle_3_copy_18-3" data-name="Rectangle 3 copy 18" class="cls-4" x="45" y="108" width="24" height="2"/>
+  <rect id="Rectangle_3_copy_4-2" data-name="Rectangle 3 copy 4" class="cls-3" x="80" y="75" width="30" height="22"/>
+  <rect id="Rectangle_3_copy_18-4" data-name="Rectangle 3 copy 18" class="cls-3" x="80" y="99" width="25" height="4"/>
+  <rect id="Rectangle_3_copy_18-5" data-name="Rectangle 3 copy 18" class="cls-4" x="80" y="105" width="24" height="2"/>
+  <rect id="Rectangle_3_copy_18-6" data-name="Rectangle 3 copy 18" class="cls-4" x="80" y="108" width="24" height="2"/>
+  <rect id="Rectangle_3_copy_4-3" data-name="Rectangle 3 copy 4" class="cls-3" x="116" y="75" width="30" height="22"/>
+  <rect id="Rectangle_3_copy_18-7" data-name="Rectangle 3 copy 18" class="cls-3" x="116" y="99" width="25" height="4"/>
+  <rect id="Rectangle_3_copy_18-8" data-name="Rectangle 3 copy 18" class="cls-4" x="116" y="105" width="24" height="2"/>
+  <rect id="Rectangle_3_copy_18-9" data-name="Rectangle 3 copy 18" class="cls-4" x="116" y="108" width="24" height="2"/>
+  <rect id="Rectangle_3_copy_5" data-name="Rectangle 3 copy 5" class="cls-3" x="45" y="121" width="30" height="22"/>
+  <rect id="Rectangle_3_copy_19" data-name="Rectangle 3 copy 19" class="cls-3" x="45" y="145" width="25" height="4"/>
+  <rect id="Rectangle_3_copy_19-2" data-name="Rectangle 3 copy 19" class="cls-4" x="45" y="151" width="24" height="2"/>
+  <rect id="Rectangle_3_copy_19-3" data-name="Rectangle 3 copy 19" class="cls-4" x="45" y="154" width="24" height="2"/>
+  <rect id="Rectangle_3_copy_5-2" data-name="Rectangle 3 copy 5" class="cls-3" x="80" y="121" width="30" height="22"/>
+  <rect id="Rectangle_3_copy_19-4" data-name="Rectangle 3 copy 19" class="cls-3" x="80" y="145" width="25" height="4"/>
+  <rect id="Rectangle_3_copy_19-5" data-name="Rectangle 3 copy 19" class="cls-4" x="80" y="151" width="24" height="2"/>
+  <rect id="Rectangle_3_copy_19-6" data-name="Rectangle 3 copy 19" class="cls-4" x="80" y="154" width="24" height="2"/>
+  <rect id="Rectangle_3_copy_5-3" data-name="Rectangle 3 copy 5" class="cls-3" x="116" y="121" width="30" height="22"/>
+  <rect id="Rectangle_3_copy_19-7" data-name="Rectangle 3 copy 19" class="cls-3" x="116" y="145" width="25" height="4"/>
+  <rect id="Rectangle_3_copy_19-8" data-name="Rectangle 3 copy 19" class="cls-4" x="116" y="151" width="24" height="2"/>
+  <rect id="Rectangle_3_copy_19-9" data-name="Rectangle 3 copy 19" class="cls-4" x="116" y="154" width="24" height="2"/>
+</svg>

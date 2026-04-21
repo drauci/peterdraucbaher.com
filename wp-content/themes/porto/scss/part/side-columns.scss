@@ -1,0 +1,64 @@
+// DIRECTIONAL
+// ---------------------------------------------------------------
+$rtl: 0 !default;
+$dir: ltr !default;
+
+@import "../theme/theme-imports";
+
+/* columns type */
+.side-menu-columns {
+    a.nolink {
+        pointer-events: auto;
+    }
+    li.menu-item {
+        position: static;
+        > .arrow, .popup:before {
+            display: none;
+        }
+    }
+    > li.menu-item .popup,
+    .narrow ul.sub-menu ul.sub-menu {
+        animation-name: menuFadeInFromLeft;
+    }
+     > li.menu-item:hover > .popup,
+    .narrow li.menu-item:hover > ul.sub-menu {
+        margin-#{$left}: 0;
+    }
+    > .menu-item-has-children,
+    .narrow .menu-item-has-children {
+        > a {
+            position: relative;
+            &:after {
+                content: if-ltr('\e850', '\e84f');
+                #{$right}: 18px;
+                font-family: 'porto';
+                opacity: .7;
+                position: absolute;
+                font-size: 8px;
+                transition: #{$right} .2s;
+            }
+        }
+        &:hover > a:after {
+            #{$right}: 12px;
+        }
+    }
+    .popup,
+    .narrow ul.sub-menu ul.sub-menu {
+        top: 50%;
+        transform: translateY(-50%) translateZ(0);
+    }
+    .wide .popup,
+    .narrow ul.sub-menu,
+    .narrow .popup {
+        box-shadow: none;
+    }
+    .narrow ul.sub-menu {
+        padding: 0;
+    }
+    .narrow li.menu-item>a {
+        padding-#{$left}: 20px;
+    }
+    .narrow ul.sub-menu ul.sub-menu {
+        position: absolute;
+    }
+}

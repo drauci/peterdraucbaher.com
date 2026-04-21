@@ -1,0 +1,76 @@
+/* Colors / Images swatch */
+.porto_swatches_section .attribute_swatch_preview a { text-indent: -9999px; width: 16px; height: 16px; display: block; }
+.porto_swatches_section .attribute_swatch_preview .swatch_field_image { width: 24px; height: 24px; }
+.porto_swatches_section .wp-post-image { display: block; width: 24px; height: 24px; }
+.porto_swatches_section .select-option { border: 1px solid #ccc; float: left; }
+.porto_swatches_section .porto-meta-color label { margin: 0; float: none; width: auto; }
+.porto_swatches_section { box-sizing: border-box; }
+.porto_swatches_section:not(:last-child) { border-bottom: 1px solid #eee; }
+.porto_swatches_section a { text-decoration: none; }
+.porto_swatches_section table { min-width: 60%; }
+.porto_swatches_section th { text-align: left; }
+.porto_swatches_section td { vertical-align: top; }
+.porto_swatches_section select { width: 90%; }
+.porto_swatches_section .attribute_swatch_input { width: 50%; }
+.product_custom_swatches { padding: 0 12px; }
+.porto_swatches_section .form-field-header { border-bottom: 1px solid #eee; padding: 8px 20px; margin: 0; }
+.porto_swatches_section .form-field-body { background-color: #fdfdfd; padding: 15px 10px; }
+.porto_swatches_section .attribute_swatch_preview { width: 144px; }
+.porto-attr-preview {
+	display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    box-sizing: border-box;
+    min-width: 35px;
+    min-height: 35px;
+    border-radius: 35px;
+    text-align: center;
+    padding: 3px;
+}
+.porto-attr-preview.swatch-img,.porto-attr-preview.swatch-bg:is([style*="#ffffff"],[style*="#FFFFFF"],[style*="255,255,255"]),.porto-attr-preview.swatch-text {
+    outline: 1px solid rgba(0,0,0,0.075);
+    outline-offset: -1px
+}
+
+.porto-attr-preview.swatch-img img {
+    display: block;
+    margin: 0 !important;
+    width: 35px;
+    height: 35px;
+    border-radius: inherit;
+    object-fit: cover
+}
+
+.porto-attr-preview.swatch-bg {
+    overflow: hidden
+}
+
+.porto-attr-preview.swatch-text span {
+    padding: 0 7px;
+    font-weight: 600;
+    font-size: 16px
+}
+
+.img-btn-set {
+    display: flex;
+    gap: 15px
+}
+
+.img-btn-set img {
+    display: block;
+    width: 123px;
+}
+
+.img-btn-set .img-btn-item {
+    border-radius: 3px;
+    overflow: hidden;
+    cursor: pointer
+}
+
+.img-btn-set .active {
+    box-shadow: 0 0 0 2px #08c
+}
+
+.product_page_product_attributes form .form-field:nth-child(4) {
+    display: none
+}

@@ -1,0 +1,86 @@
+// WP Bakery
+@import "gui/sections-wpb";
+@import "layouts/layout_wpb";
+
+/* frontend editor */
+.compose-mode .vc_element[class*="vc_porto_hb_"] {
+	display: inline-block;
+	vertical-align: middle;
+	margin-#{$right}: .875rem;
+
+	&:last-child {
+		margin-#{$right}: 0
+	}
+}
+
+/* Header Builder */
+.header-builder-p {
+	.vc_row.vc_row-flex>.vc_column_container>.vc_column-inner {
+		z-index: auto;
+	}
+	.vc_column-inner {
+		display: flex;
+		align-items: center;
+		flex-wrap: wrap;
+		
+		& > *:not(.vc_row) {
+			margin-#{$right}: .875rem
+		}
+		& > *:last-child {
+			margin-#{$right}: 0
+		}
+		& > .vc_row,
+		& > .vc_vc_row_inner {
+			width: calc( 100% + var(--porto-grid-gutter-width) )
+		}
+	}
+
+	.vc_row-o-full-height>.vc_column_container>.vc_column-inner,
+	.vc_row-o-full-height>.vc_vc_column>.vc_column_container>.vc_column-inner,
+	.vc_row-o-full-height>.vc_vc_column_inner>.vc_column_container>.vc_column-inner {
+		align-content: flex-start;
+	}
+	.vc_row-flex>.vc_column_container>.vc_column-inner,
+	.vc_row-flex>.vc_vc_column>.vc_column_container>.vc_column-inner,
+	.vc_row-flex>.vc_vc_column_inner>.vc_column_container>.vc_column-inner {
+		flex-direction: row;
+		justify-content: flex-start
+	}
+
+	.porto-block {
+		.porto-block .vc_column-inner {
+			display: block;
+
+			> * {
+				margin-#{$right}: 0
+			}
+		}
+	}
+}
+
+#header.header-builder-p .header-main .container > div {
+	display: flex
+}
+.wpb-flex-1, .vc_column_container.flex-1 {
+	flex: 1;
+}
+.wpb-flex-auto, .vc_column_container.flex-auto {
+	width: auto;
+	flex: none
+}
+.wpb-flex-1:last-of-type .vc_column-inner,
+.vc_column_container.flex-1:last-of-type .vc_column-inner {
+	justify-content: flex-end
+}
+.wpb-flex-1:nth-of-type(2):not(:last-of-type) .vc_column-inner,
+.vc_column_container.flex-1:nth-of-type(2):not(:last-of-type) .vc_column-inner {
+	justify-content: center
+}
+[data-inviewport-style].vc_row.view-scale-wrapper, .vc_row.cursor-shape-wrapper {
+    padding-top: 30px;
+}
+
+// menu
+#header li.menu-item .vc_custom_heading a {
+	font: inherit;
+}

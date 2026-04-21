@@ -1,0 +1,928 @@
+<wpml-config>
+  <custom-types>
+    <custom-type translate="1" display-as-translated="1">product</custom-type>
+    <custom-type translate="1" display-as-translated="1">product_variation</custom-type>
+    <custom-type translate="1" display-as-translated="1">faq</custom-type>
+    <custom-type translate="1" display-as-translated="1">member</custom-type>
+    <custom-type translate="1" display-as-translated="1">portfolio</custom-type>
+    <custom-type translate="1" display-as-translated="1">event</custom-type>
+    <custom-type translate="1" display-as-translated="1">porto_builder</custom-type>
+  </custom-types>
+  <custom-fields>
+    <custom-field action="copy">page_title</custom-field>
+    <custom-field action="translate">page_sub_title</custom-field>
+    <custom-field action="copy">header_view</custom-field>
+    <custom-field action="copy">default</custom-field>
+    <custom-field action="copy">layout</custom-field>
+    <custom-field action="copy-once">sidebar</custom-field>
+    <custom-field action="copy-once">sidebar2</custom-field>
+    <custom-field action="copy">sticky_sidebar</custom-field>
+    <custom-field action="copy">mobile_sidebar</custom-field>
+    <custom-field action="copy">custom_css</custom-field>
+    <custom-field action="copy">custom_js_head</custom-field>
+    <custom-field action="copy">custom_js_body</custom-field>
+    <custom-field action="copy">custom_tab_priority1</custom-field>
+    <custom-field action="copy">custom_tab_priority2</custom-field>
+    <custom-field action="copy">product_image_on_hover</custom-field>
+    <custom-field action="translate">custom_tab_title1</custom-field>
+    <custom-field action="translate">custom_tab_content1</custom-field>
+    <custom-field action="translate">_variation_description</custom-field>
+    <custom-field action="copy">attribute_pa_color</custom-field>
+    <custom-field action="copy">attribute_pa_size</custom-field>
+    <custom-field action="copy">_menu_item_type</custom-field>
+    <custom-field action="copy">_menu_item_menu_item_parent</custom-field>
+    <custom-field action="copy">_menu_item_object_id</custom-field>
+    <custom-field action="copy">_menu_item_object</custom-field>
+    <custom-field action="copy">_menu_item_target</custom-field>
+    <custom-field action="copy">_menu_item_classes</custom-field>
+    <custom-field action="copy">_menu_item_xfn</custom-field>
+    <custom-field action="copy">_menu_item_url</custom-field>
+    <custom-field action="copy">_menu_item_icon</custom-field>
+    <custom-field action="copy">_menu_item_popup_type</custom-field>
+    <custom-field action="copy">_menu_item_popup_cols</custom-field>
+    <custom-field action="copy">_menu_item_popup_max_width</custom-field>
+    <custom-field action="copy">_menu_item_nolink</custom-field>
+    <custom-field action="copy">_menu_item_cols</custom-field>
+    <custom-field action="copy">_menu_item_tip_label</custom-field>
+    <custom-field action="copy">_menu_item_hide</custom-field>
+    <custom-field action="copy">_menu_item_mobile_hide</custom-field>
+    <custom-field action="copy">_menu_item_popup_mobile_hide</custom-field>
+    <custom-field action="copy-once">_menu_item_popup_bg_image</custom-field>
+    <custom-field action="copy">_menu_item_popup_bg_repeat</custom-field>
+    <custom-field action="copy">_menu_item_popup_bg_size</custom-field>
+    <custom-field action="copy">_menu_item_popup_style</custom-field>
+    <custom-field action="copy">_menu_item_popup_bg_pos</custom-field>
+    <custom-field action="copy">_porto_builder_conditions</custom-field>
+    <custom-field action="copy">slider_thumbs_count</custom-field>
+    <custom-field action="copy">portfolio_layout</custom-field>
+    <custom-field action="translate">portfolio_info</custom-field>
+    <custom-field action="copy">portfolio_link</custom-field>
+    <custom-field action="translate">portfolio_location</custom-field>
+    <custom-field action="translate">portfolio_client</custom-field>
+    <custom-field action="copy-once">portfolio_client_link</custom-field>
+    <custom-field action="translate">portfolio_author_quote</custom-field>
+    <custom-field action="translate">portfolio_author_name</custom-field>
+    <custom-field action="copy-once">portfolio_author_image</custom-field>
+    <custom-field action="translate">portfolio_author_role</custom-field>
+    <custom-field action="copy-once">portfolio_archive_image</custom-field>
+    <custom-field action="copy">slider_type</custom-field>
+    <custom-field action="copy">portfolio_share</custom-field>
+    <custom-field action="copy-once">like_count</custom-field>
+    <custom-field action="translate">member_firstname</custom-field>
+    <custom-field action="translate">member_lastname</custom-field>
+    <custom-field action="translate">member_role</custom-field>
+    <custom-field action="translate">member_overview</custom-field>
+    <custom-field action="copy-once">member_portfolios</custom-field>
+    <custom-field action="copy-once">member_products</custom-field>
+    <custom-field action="copy-once">member_posts</custom-field>
+    <custom-field action="copy">slideshow_type</custom-field>
+    <custom-field action="copy-once">video_code</custom-field>
+    <custom-field action="copy-once">member_link</custom-field>
+    <custom-field action="copy">member_email</custom-field>
+    <custom-field action="copy">member_phone</custom-field>
+    <custom-field action="copy">member_facebook</custom-field>
+    <custom-field action="copy">member_twitter</custom-field>
+    <custom-field action="copy">member_linkedin</custom-field>
+    <custom-field action="copy">member_googleplus</custom-field>
+    <custom-field action="copy">member_pinterest</custom-field>
+    <custom-field action="copy">member_vk</custom-field>
+    <custom-field action="copy">member_xing</custom-field>
+    <custom-field action="copy">member_tumblr</custom-field>
+    <custom-field action="copy">member_reddit</custom-field>
+    <custom-field action="copy">member_vimeo</custom-field>
+    <custom-field action="copy">member_instagram</custom-field>
+    <custom-field action="copy">member_whatsapp</custom-field>
+    <custom-field action="copy-once">event_link</custom-field>
+    <custom-field action="copy">event_start_date</custom-field>
+    <custom-field action="copy">event_end_date</custom-field>
+    <custom-field action="copy">event_start_time</custom-field>
+    <custom-field action="copy">event_end_time</custom-field>
+    <custom-field action="translate">event_location</custom-field>
+    <custom-field action="copy">event_time_counter</custom-field>
+    <custom-field action="copy">show_featured_image</custom-field>
+    <custom-field action="copy">page_share</custom-field>
+    <custom-field action="copy">page_microdata</custom-field>
+    <custom-field action="copy-once">porto_video_thumbnail_img</custom-field>
+    <custom-field action="copy-once">porto_video_thumbnail_poster</custom-field>
+    <custom-field action="copy">porto_video_source</custom-field>
+    <custom-field action="copy-once">porto_product_video_thumbnails</custom-field>
+    <custom-field action="copy-once">porto_video_youtube</custom-field>
+    <custom-field action="copy-once">porto_video_vimeo</custom-field>
+    <custom-field action="copy">porto_video_sh_type</custom-field>
+    <custom-field action="copy-once">porto_product_video_thumbnail_shortcode</custom-field>
+    <custom-field action="copy-once">porto_product_360_gallery</custom-field>
+    <custom-field action="copy">loading_overlay</custom-field>
+    <custom-field action="copy">breadcrumbs</custom-field>
+    <custom-field action="copy">breadcrumbs_type</custom-field>
+    <custom-field action="copy">header</custom-field>
+    <custom-field action="copy">sticky_header</custom-field>
+    <custom-field action="copy">footer</custom-field>
+    <custom-field action="copy">footer_view</custom-field>
+    <custom-field action="copy-once">main_menu</custom-field>
+    <custom-field action="copy-once">secondary_menu</custom-field>
+    <custom-field action="copy-once">sidebar_menu</custom-field>
+    <custom-field action="copy">banner_pos</custom-field>
+    <custom-field action="copy">banner_type</custom-field>
+    <custom-field action="copy-once">rev_slider</custom-field>
+    <custom-field action="copy-once">master_slider</custom-field>
+    <custom-field action="copy">banner_block</custom-field>
+    <custom-field action="copy">content_top</custom-field>
+    <custom-field action="copy">content_inner_top</custom-field>
+    <custom-field action="copy">content_inner_bottom</custom-field>
+    <custom-field action="copy">content_bottom</custom-field>
+    <custom-field action="copy-once">product_more_link</custom-field>
+    <custom-field action="translate">custom_tab_title2</custom-field>
+    <custom-field action="translate">custom_tab_content2</custom-field>
+    <custom-field action="copy">porto_builder_type</custom-field>
+    <custom-field action="copy">product_layout</custom-field>
+    <custom-field action="copy-once">product_image_on_hover</custom-field>
+    <custom-field action="copy">product_custom_block</custom-field>
+    <custom-field action="copy">product_share</custom-field>
+    <custom-field action="copy">header_type</custom-field>
+    <custom-field action="copy">header_side_pos</custom-field>
+    <custom-field action="copy">header_side_width</custom-field>
+    <custom-field action="copy">disable_sticky_sidebar</custom-field>
+    <custom-field action="copy">popup_width</custom-field>
+    <custom-field action="copy">popup_animation</custom-field>
+    <custom-field action="copy">load_duration</custom-field>
+    <custom-field action="copy">disable_popup_period</custom-field>
+    <custom-field action="copy">container</custom-field>
+    <custom-field action="copy-once">external_url</custom-field>
+    <custom-field action="copy">post_layout</custom-field>
+    <custom-field action="copy">post_share</custom-field>
+  </custom-fields>
+  <custom-term-fields>
+    <custom-term-field action="copy">color_value</custom-term-field>
+    <custom-term-field action="copy-once">label_value</custom-term-field>
+    <custom-term-field action="copy-once">image_value</custom-term-field>
+    <custom-term-field action="copy">category_icon</custom-term-field>
+    <custom-term-field action="copy-once">category_image</custom-term-field>
+    <custom-term-field action="copy">member_options</custom-term-field>
+    <custom-term-field action="copy">member_infinite</custom-term-field>
+    <custom-term-field action="copy">portfolio_options</custom-term-field>
+    <custom-term-field action="copy">portfolio_infinite</custom-term-field>
+    <custom-term-field action="copy">portfolio_layout</custom-term-field>
+    <custom-term-field action="copy">portfolio_grid_columns</custom-term-field>
+    <custom-term-field action="copy">portfolio_grid_view</custom-term-field>
+    <custom-term-field action="copy">portfolio_archive_thumb</custom-term-field>
+    <custom-term-field action="copy">portfolio_archive_thumb_bg</custom-term-field>
+    <custom-term-field action="copy">portfolio_archive_thumb_image</custom-term-field>
+    <custom-term-field action="copy">post_options</custom-term-field>
+    <custom-term-field action="copy">post_infinite</custom-term-field>
+    <custom-term-field action="copy">post_layout</custom-term-field>
+    <custom-term-field action="copy">post_grid_columns</custom-term-field>
+    <custom-term-field action="copy">view_mode</custom-term-field>
+    <custom-term-field action="copy">filter_layout</custom-term-field>
+    <custom-term-field action="copy">product_cols</custom-term-field>
+    <custom-term-field action="copy">addlinks_pos</custom-term-field>
+  </custom-term-fields>
+  <shortcodes>
+    <shortcode>
+      <tag>porto_hb_toggle</tag>
+      <attributes>
+        <attribute>title</attribute>
+      </attributes>
+    </shortcode>
+    <shortcode>
+      <tag>porto_hb_menu</tag>
+      <attributes>
+        <attribute>title</attribute>
+      </attributes>
+    </shortcode>
+    <shortcode>
+      <tag>porto_hb_search_form</tag>
+      <attributes>
+        <attribute>placeholder_text</attribute>
+      </attributes>
+    </shortcode>
+    <shortcode>
+      <tag>porto_single_product_linked</tag>
+      <attributes>
+        <attribute>heading_text</attribute>
+        <attribute>table_title</attribute>
+      </attributes>
+    </shortcode>
+    <shortcode>
+      <tag>porto_blog</tag>
+      <attributes>
+        <attribute>title</attribute>
+      </attributes>
+    </shortcode>
+    <shortcode>
+      <tag>porto_buttons</tag>
+      <attributes>
+        <attribute>btn_title</attribute>
+      </attributes>
+    </shortcode>
+    <shortcode>
+      <tag>porto_concept</tag>
+      <attributes>
+        <attribute>title1</attribute>
+        <attribute>title2</attribute>
+        <attribute>title3</attribute>
+        <attribute>title4</attribute>
+      </attributes>
+    </shortcode>
+    <shortcode>
+      <tag>porto_content_switcher</tag>
+      <attributes>
+        <attribute>first_label</attribute>
+        <attribute>second_label</attribute>
+        <attribute>first_content</attribute>
+        <attribute>second_content</attribute>
+      </attributes>
+    </shortcode> 
+    <shortcode>
+      <tag>porto_countdown</tag>
+      <attributes>
+        <attribute>countdown_label</attribute>
+        <attribute>string_years</attribute>
+        <attribute>string_months</attribute>
+        <attribute>string_weeks</attribute>
+        <attribute>string_days</attribute>
+        <attribute>string_hours</attribute>
+        <attribute>string_minutes</attribute>
+        <attribute>string_seconds</attribute>
+        <attribute>string_years2</attribute>
+        <attribute>string_months2</attribute>
+        <attribute>string_weeks2</attribute>
+        <attribute>string_days2</attribute>
+        <attribute>string_hours2</attribute>
+        <attribute>string_minutes2</attribute>
+        <attribute>string_seconds2</attribute>        
+      </attributes>
+    </shortcode>            
+    <shortcode>
+      <tag>porto_diamonds</tag>
+      <attributes>
+        <attribute>title1</attribute>
+        <attribute>title2</attribute>
+        <attribute>title3</attribute>
+        <attribute>title4</attribute>
+        <attribute>title5</attribute>
+        <attribute>title6</attribute>
+        <attribute>title7</attribute>        
+      </attributes>
+    </shortcode>
+    <shortcode>
+      <tag>porto_experience_timeline_item</tag>
+      <attributes>
+        <attribute>company</attribute>
+        <attribute>location</attribute>
+        <attribute>heading</attribute>
+        <attribute>content</attribute>
+      </attributes>
+    </shortcode> 
+    <shortcode>
+      <tag>porto_fancytext</tag>
+      <attributes>
+        <attribute>fancytext_prefix</attribute>
+        <attribute>fancytext_suffix</attribute>
+        <attribute>fancytext_strings</attribute>
+      </attributes>
+    </shortcode>
+    <shortcode>
+      <tag>porto_faqs</tag>
+      <attributes>
+        <attribute>title</attribute>
+      </attributes>
+    </shortcode>  
+    <shortcode>
+      <tag>porto_floating_menu_item</tag>
+      <attributes>
+        <attribute>title</attribute>
+      </attributes>
+    </shortcode>    
+    <shortcode>
+      <tag>porto_image_frame</tag>
+      <attributes>
+        <attribute>title</attribute>
+        <attribute>sub_title</attribute>
+        <attribute>content</attribute>
+      </attributes>
+    </shortcode>    
+    <shortcode>
+      <tag>porto_info_box</tag>
+      <attributes>
+        <attribute>title</attribute>
+        <attribute>subtitle</attribute>
+        <attribute>read_text</attribute>
+        <attribute>content</attribute>
+      </attributes>
+    </shortcode>     
+    <shortcode>
+      <tag>porto_interactive_banner</tag>
+      <attributes>
+        <attribute>banner_title</attribute>
+        <attribute>content</attribute>
+      </attributes>
+    </shortcode>  
+    <shortcode>
+      <tag>porto_lightbox</tag>
+      <attributes>
+        <attribute>prefix</attribute>
+        <attribute>text</attribute>
+        <attribute>suffix</attribute>
+      </attributes>
+    </shortcode>                        
+    <shortcode>
+      <tag>porto_links_block</tag>
+      <attributes>
+        <attribute>title</attribute>
+      </attributes>
+    </shortcode> 
+    <shortcode>
+      <tag>porto_links_item</tag>
+      <attributes>
+        <attribute>label</attribute>
+      </attributes>
+    </shortcode>
+    <shortcode>
+      <tag>porto_members</tag>
+      <attributes>
+        <attribute>title</attribute>
+      </attributes>
+    </shortcode>
+    <shortcode>
+      <tag>porto_page_header</tag>
+      <attributes>
+        <attribute>page_title</attribute>
+        <attribute>page_sub_title</attribute>
+      </attributes>
+    </shortcode>
+    <shortcode>
+      <tag>porto_popover</tag>
+      <attributes>
+        <attribute>prefix</attribute>
+        <attribute>text</attribute>
+        <attribute>suffix</attribute>
+        <attribute>popover_title</attribute>
+        <attribute>popover_text</attribute>
+      </attributes>
+    </shortcode>    
+    <shortcode>
+      <tag>porto_portfolios_category</tag>
+      <attributes>
+        <attribute>title</attribute>
+      </attributes>
+    </shortcode>
+    <shortcode>
+      <tag>porto_portfolios</tag>
+      <attributes>
+        <attribute>title</attribute>
+      </attributes>
+    </shortcode> 
+    <shortcode>
+      <tag>porto_preview_image</tag>
+      <attributes>
+        <attribute>tip_label</attribute>
+      </attributes>
+    </shortcode>
+    <shortcode>
+      <tag>porto_price_box</tag>
+      <attributes>
+        <attribute>title</attribute>
+        <attribute>desc</attribute>
+        <attribute>popular_label</attribute>
+        <attribute>price_label</attribute>
+        <attribute>btn_label</attribute>
+        <attribute>content</attribute>
+      </attributes>
+    </shortcode>    
+    <shortcode>
+      <tag>porto_recent_members</tag>
+      <attributes>
+        <attribute>title</attribute>
+      </attributes>
+    </shortcode>
+    <shortcode>
+      <tag>porto_recent_portfolios</tag>
+      <attributes>
+        <attribute>title</attribute>
+      </attributes>
+    </shortcode>
+    <shortcode>
+      <tag>porto_history</tag>
+      <attributes>
+        <attribute>content</attribute>
+      </attributes>
+    </shortcode>
+    <shortcode>
+      <tag>porto_hotspot</tag>
+      <attributes>
+        <attribute>content</attribute>
+      </attributes>
+    </shortcode>
+    <shortcode>
+      <tag>porto_recent_posts</tag>
+      <attributes>
+        <attribute>title</attribute>
+      </attributes>
+    </shortcode> 
+    <shortcode>
+      <tag>porto_schedule_timeline_container</tag>
+      <attributes>
+        <attribute>title</attribute>
+        <attribute>subtitle</attribute>
+      </attributes>
+    </shortcode>
+    <shortcode>
+      <tag>porto_schedule_timeline_item</tag>
+      <attributes>
+        <attribute>subtitle</attribute>
+        <attribute>heading</attribute>
+        <attribute>content</attribute>
+      </attributes>
+    </shortcode> 
+    <shortcode>
+      <tag>porto_sidebar_menu</tag>
+      <attributes>
+        <attribute>title</attribute>
+      </attributes>
+    </shortcode> 
+    <shortcode>
+      <tag>porto_sort_filter</tag>
+      <attributes>
+        <attribute>label</attribute>
+      </attributes>
+    </shortcode>
+    <shortcode>
+      <tag>porto_stat_counter</tag>
+      <attributes>
+        <attribute>counter_title</attribute>
+        <attribute>counter_prefix</attribute>
+        <attribute>counter_suffix</attribute>
+      </attributes>
+    </shortcode> 
+    <shortcode>
+      <tag>porto_sticky_nav_link</tag>
+      <attributes>
+        <attribute>label</attribute>
+      </attributes>
+    </shortcode> 
+    <shortcode>
+      <tag>porto_testimonial</tag>
+      <attributes>
+        <attribute>name</attribute>
+        <attribute>role</attribute>
+        <attribute>company</attribute>
+        <attribute>content</attribute>
+      </attributes>
+    </shortcode>  
+    <shortcode>
+      <tag>porto_info_list_item</tag>
+      <attributes>
+        <attribute>content</attribute>
+      </attributes>
+    </shortcode> 
+    <shortcode>
+      <tag>porto_tooltip</tag>
+      <attributes>
+        <attribute>prefix</attribute>
+        <attribute>text</attribute>
+        <attribute>suffix</attribute>
+        <attribute>tooltip_text</attribute>
+      </attributes>
+    </shortcode> 
+    <shortcode>
+      <tag>porto_carousel_logo</tag>
+      <attributes>
+        <attribute>content</attribute>
+      </attributes>
+    </shortcode>
+    <shortcode>
+      <tag>porto_blockquote</tag>
+      <attributes>
+        <attribute>content</attribute>
+        <attribute>footer_before</attribute>
+        <attribute>footer_after</attribute>
+      </attributes>
+    </shortcode>    
+    <shortcode>
+      <tag>porto_ultimate_heading</tag>
+      <attributes>
+        <attribute>main_heading</attribute>
+        <attribute>before_heading</attribute>
+        <attribute>after_heading</attribute>
+        <attribute>content</attribute>
+      </attributes>
+    </shortcode> 
+    <shortcode>
+      <tag>porto_best_selling_products</tag>
+      <attributes>
+        <attribute>title</attribute>
+      </attributes>
+    </shortcode> 
+    <shortcode>
+      <tag>porto_featured_products</tag>
+      <attributes>
+        <attribute>title</attribute>
+        <attribute>show_sales_title</attribute>
+        <attribute>show_new_title</attribute>
+        <attribute>show_rating_title</attribute>
+        <attribute>show_onsale_title</attribute>
+      </attributes>
+    </shortcode>                                
+    <shortcode>
+      <tag>porto_modal</tag>
+      <attributes>
+        <attribute>content</attribute>
+      </attributes>
+    </shortcode>
+    <shortcode>
+      <tag>porto_product_attribute</tag>
+      <attributes>
+        <attribute>title</attribute>
+      </attributes>
+    </shortcode> 
+    <shortcode>
+      <tag>porto_product_categories</tag>
+      <attributes>
+        <attribute>title</attribute>
+      </attributes>
+    </shortcode>  
+    <shortcode>
+      <tag>porto_product_category</tag>
+      <attributes>
+        <attribute>title</attribute>
+        <attribute>show_sales_title</attribute>
+        <attribute>show_new_title</attribute>
+        <attribute>show_rating_title</attribute>
+      </attributes>
+    </shortcode> 
+    <shortcode>
+      <tag>porto_product</tag>
+      <attributes>
+        <attribute>title</attribute>
+      </attributes>
+    </shortcode> 
+    <shortcode>
+      <tag>porto_products_filter</tag>
+      <attributes>
+        <attribute>submit_value</attribute>
+        <attribute>filter_titles</attribute>
+      </attributes>
+    </shortcode>
+    <shortcode>
+      <tag>porto_products</tag>
+      <attributes>
+        <attribute>title</attribute>
+        <attribute>show_sales_title</attribute>
+        <attribute>show_new_title</attribute>
+        <attribute>show_rating_title</attribute>
+        <attribute>show_onsale_title</attribute>
+      </attributes>
+    </shortcode>
+    <shortcode>
+      <tag>porto_recent_products</tag>
+      <attributes>
+        <attribute>title</attribute>
+      </attributes>
+    </shortcode>
+    <shortcode>
+      <tag>porto_sale_products</tag>
+      <attributes>
+        <attribute>title</attribute>
+      </attributes>
+    </shortcode> 
+    <shortcode>
+      <tag>porto_top_rated_products</tag>
+      <attributes>
+        <attribute>title</attribute>
+      </attributes>
+    </shortcode>  
+    <shortcode>
+      <tag>porto_widget_woo_product_tags</tag>
+      <attributes>
+        <attribute>title</attribute>
+      </attributes>
+    </shortcode>            
+    <shortcode>
+      <tag>porto_widget_woo_products</tag>
+      <attributes>
+        <attribute>title</attribute>
+      </attributes>
+    </shortcode>  
+    <shortcode>
+      <tag>porto_widget_woo_recent_reviews</tag>
+      <attributes>
+        <attribute>title</attribute>
+      </attributes>
+    </shortcode>   
+    <shortcode>
+      <tag>porto_widget_woo_recently_viewed</tag>
+      <attributes>
+        <attribute>title</attribute>
+      </attributes>
+    </shortcode>  
+    <shortcode>
+      <tag>porto_widget_woo_top_rated_products</tag>
+      <attributes>
+        <attribute>title</attribute>
+      </attributes>
+    </shortcode>  
+    <shortcode>
+      <tag>porto_ab_posts_grid</tag>
+      <attributes>
+        <attribute encoding="allow_html_tags">post_found_nothing</attribute>
+      </attributes>
+    </shortcode>  
+    <shortcode>
+      <tag>porto_tb_archives</tag>
+      <attributes>
+        <attribute encoding="allow_html_tags">post_found_nothing</attribute>
+      </attributes>
+    </shortcode> 
+    <shortcode>
+      <tag>porto_hb_compare</tag>
+      <attributes>
+        <attribute>compare_label</attribute>
+      </attributes>
+    </shortcode> 
+    <shortcode>
+      <tag>porto_single_product_attribute</tag>
+      <attributes>
+        <attribute>table_title</attribute>
+      </attributes>
+    </shortcode>                              
+
+  </shortcodes>
+  <elementor-widgets>
+    <widget name="porto_cp_attribute">
+      <fields>
+        <field>table_title</field>
+      </fields>
+    </widget>  
+    <widget name="porto_archive_posts_grid">
+      <fields>
+        <field>post_found_nothing</field>
+      </fields>
+    </widget>
+    <widget name="porto_sb_archives">
+      <fields>
+        <field>post_found_nothing</field>
+      </fields>
+    </widget>
+    <widget name="porto_modal">
+      <fields>
+        <field>content</field>
+      </fields>
+    </widget>
+    <widget name="porto_hb_toggle">
+      <fields>
+        <field>menu_title</field>
+      </fields>
+    </widget>
+    <widget name="porto_hb_menu">
+      <fields>
+        <field>title</field>
+      </fields>
+    </widget>
+    <widget name="porto_hb_compare">
+      <fields>
+        <field>compare_label</field>
+      </fields>
+    </widget>
+    <widget name="porto_ultimate_heading">
+      <fields>
+        <field>main_heading</field>
+        <field>before_heading</field>
+        <field>after_heading</field>
+        <field>content</field>
+      </fields>
+    </widget>
+    <widget name="porto_fancytext">
+      <fields>
+        <field>fancytext_prefix</field>
+        <field>fancytext_strings</field>
+        <field>fancytext_suffix</field>
+      </fields>
+    </widget>
+    <widget name="porto_faqs">
+      <fields>
+        <field>title</field>
+      </fields>
+    </widget>
+    <widget name="porto_info_box">
+      <fields>
+        <field>title</field>
+        <field>subtitle</field>
+        <field>content</field>
+        <field>read_text</field>
+        <field>icon_img_url</field>
+        <field editor_type="LINK" key_of="link">url</field>
+      </fields>
+    </widget>
+    <widget name="porto_hotspot">
+      <fields>
+        <field>content</field>
+      </fields>
+    </widget>    
+    <widget name="porto_button">
+      <fields>
+        <field>title</field>
+        <field editor_type="LINK" key_of="link">url</field>
+      </fields>
+    </widget>
+    <widget name="porto_steps">
+      <fields>
+        <field>title</field>
+        <field>subtitle</field>
+      </fields>
+      <fields-in-item items_of="step_item_list">
+        <field>heading</field>
+        <field>subtitle</field>
+        <field>content</field>
+      </fields-in-item>
+    </widget>
+    <widget name="porto_hb_search_form">
+      <fields>
+        <field type="Search Form: placeholder text">placeholder_text</field>
+      </fields>
+    </widget>
+    <widget name="porto_cp_linked">
+      <fields>
+        <field type="Linked Products: heading text">heading_text</field>
+        <field>table_title</field>
+      </fields>
+    </widget>  
+    <widget name="porto_blog">
+      <fields>
+        <field type="Blog: title">title</field>
+      </fields>
+    </widget>  
+    <widget name="porto_circular_bar">
+      <fields>
+        <field type="Circular Bar: title">title</field>
+      </fields>
+    </widget>  
+    <widget name="porto_content_switcher">
+      <fields>
+        <field type="Content Switcher: First Label">first_label</field>
+        <field type="Content Switcher: Second Label">second_label</field>
+        <field>first_content</field>
+        <field>second_content</field>
+      </fields>
+    </widget>   
+    <widget name="porto_countdown">
+      <fields>
+        <field type="Countdown: label">countdown_label</field>
+        <field type="Countdown: years">string_years</field>
+        <field type="Countdown: months">string_months</field>
+        <field type="Countdown: weeks">string_weeks</field>
+        <field type="Countdown: days">string_days</field>
+        <field type="Countdown: hours">string_hours</field>
+        <field type="Countdown: minutes">string_minutes</field>
+        <field type="Countdown: seconds">string_seconds</field>
+        <field type="Countdown: years(plural)">string_years2</field>
+        <field type="Countdown: months(plural)">string_months2</field>
+        <field type="Countdown: weeks(plural)">string_weeks2</field>
+        <field type="Countdown: days(plural)">string_days2</field>
+        <field type="Countdown: hours(plural)">string_hours2</field>
+        <field type="Countdown: minutes(plural)">string_minutes2</field>
+        <field type="Countdown: seconds(plural)">string_seconds2</field>        
+      </fields>
+    </widget>   
+    <widget name="porto_members">
+      <fields>
+        <field type="Members: title">title</field>
+      </fields>
+    </widget> 
+    <widget name="porto_page_header">
+      <fields>
+        <field type="Page Header: title">page_title</field>
+        <field type="Page Header: sub title">page_sub_title</field>
+      </fields>
+    </widget> 
+    <widget name="porto_portfolios">
+      <fields>
+        <field type="Portfolio: title">title</field>
+      </fields>
+    </widget>  
+    <widget name="porto_portfolios_category">
+      <fields>
+        <field type="Portfolio Category: title">title</field>
+      </fields>
+    </widget>
+    <widget name="porto_price_box">
+      <fields>
+        <field type="Price box: title">title</field>
+        <field type="Price box: description">desc</field>
+        <field type="Price box: price label">price_label</field>
+        <field type="Price box: popular label">popular_label</field>
+        <field type="Price box: button label">btn_label</field>
+        <field>content</field>
+        <field editor_type="LINK" key_of="btn_link">url</field>
+      </fields>
+    </widget>                  
+    <widget name="porto_product_categories">
+      <fields>
+        <field type="Product Category: title">title</field>
+      </fields>
+    </widget>
+    <widget name="porto_products_filter">
+      <fields>
+        <field type="Product Filter: submit value">submit_value</field>
+        <field>filter_titles</field>
+      </fields>
+    </widget>
+    <widget name="porto_products">
+      <fields>
+        <field type="Product: title">title</field>
+        <field type="Product: popular title">show_sales_title</field>
+        <field type="Product: new title">show_new_title</field>
+        <field type="Product: rating title">show_rating_title</field>
+        <field type="Product: onsale title">show_onsale_title</field>
+      </fields>
+    </widget>
+    <widget name="porto_recent_members">
+      <fields>
+        <field type="Recent member: title">title</field>
+      </fields>
+    </widget>
+    <widget name="porto_recent_portfolios">
+      <fields>
+        <field type="Recent portfolio: title">title</field>
+      </fields>
+    </widget>
+    <widget name="porto_recent_posts">
+      <fields>
+        <field type="Recent posts: title">title</field>
+      </fields>
+    </widget>
+    <widget name="porto_sidebar_menu">
+      <fields>
+        <field type="Sidebar: title">title</field>
+      </fields>
+    </widget>
+    <widget name="porto_stat_counter">
+      <fields>
+        <field type="Counter: prefix label">counter_prefix</field>
+        <field type="Counter: suffix label">counter_suffix</field>
+        <field>counter_title</field>
+      </fields>
+    </widget>
+    <widget name="porto_sticky_nav">
+      <fields-in-item items_of="sticky_nav_item_list">
+        <field type="Sticky nav: label">label</field>
+        <field editor_type="LINK" key_of="link">url</field>
+      </fields-in-item>
+    </widget>
+  </elementor-widgets>
+  <admin-texts>
+    <key name="porto_settings">
+      <key name="header-tooltip"/>
+      <key name="footer-tooltip"/>
+      <key name="welcome-msg"/>
+      <key name="header-contact-info"/>
+      <key name="header-copyright"/>
+      <key name="footer-copyright"/>
+      <key name="faq-sub-title"/>
+      <key name="menu-block"/>
+      <key name="menu-sidebar-title"/>
+      <key name="menu-main"/>
+      <key name="menu-secondary"/>
+      <key name="menu-side"/>
+      <key name="menu-navigation"/>
+      <key name="menu-title"/>
+      <key name="search-placeholder"/>
+      <key name="minicart-text"/>
+      <key name="footer-ribbon"/>
+      <key name="product-hot-label"/>
+      <key name="product-sale-label"/>
+      <key name="product-new-label"/>
+      <key name="woo-sales-popup-title"/>
+      <key name="woo-pre-order-label"/>
+      <key name="woo-pre-order-msg-date"/>
+      <key name="woo-pre-order-msg-nodate"/>
+      <key name="product-quickview-label"/>
+      <key name="product-compare-title"/>
+      <key name="product-tab-title"/>
+      <key name="catalog-readmore-label"/>
+      <key name="member-sub-title"/>
+      <key name="event-sub-title"/>
+      <key name="hot-label"/>
+      <key name="blog-title"/>
+      <key name="portfolio-title"/>
+      <key name="portfolio-archive-readmore-label"/>
+      <key name="member-archive-readmore-label"/>
+    </key>
+    <key name="widget_contact-info-widget">
+      <key name="2">
+        <key name="title"/>
+        <key name="contact_before"/>
+        <key name="address_label"/>
+        <key name="address"/>
+        <key name="phone_label"/>
+        <key name="phone"/>
+        <key name="email_label"/>
+        <key name="email"/>
+        <key name="working_label"/>
+        <key name="working"/>
+        <key name="contact_after"/>
+        <key name="view"/>
+      </key>
+      <key name="_multiwidget"/>
+    </key>
+  </admin-texts>
+</wpml-config>

@@ -1,0 +1,118 @@
+
+/* Quick View */
+.quickview-wrap {
+    width: 900px;
+    padding: 15px;
+
+    @media(min-width: 992px) {
+        .entry-summary {        
+            mask-image: linear-gradient(to top, transparent 5px, #000 40px)
+        }
+        .quickview-inner:after {
+            content: "";
+            display: block;
+            width: 100%;
+            height: 30px;
+        }
+    }
+    .quickview-inner {
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        overflow-y: auto;
+        @media #{$screen-normal} {
+            position: static;
+        }
+        &::-webkit-scrollbar {
+            height: 7px;
+            width: 4px;
+        }
+        &:hover::-webkit-scrollbar-thumb {
+            background: rgba(0, 0, 0, 0.25);
+        }
+        &::-webkit-scrollbar-thumb {
+            margin-right: 2px;
+            background: rgba(0, 0, 0, 0);
+            cursor: pointer;
+            transition: background 0.3s;
+        }
+
+    }
+    .product>.row {
+        min-height: 530px;
+    }
+    @media #{$screen-normal} {
+        width: 550px;
+    }
+
+    @media #{$screen-medium} {
+        width: auto;
+        &.skeleton-body {
+            width: calc( 100vw - 40px );
+        }
+    }
+
+    @media #{$screen-small} {
+        padding: 0;
+        .row {
+            margin-left: 0;
+            margin-right: 0;
+        }
+        .summary-before,
+        .summary {
+            padding-left: 0;
+            padding-right: 0;
+        }
+    }
+
+    .product {
+        .summary-before,
+        .entry-summary {
+            margin-bottom: 0;
+        }
+
+        @media #{$screen-normal} {
+            .summary-before {
+                margin-bottom: 30px;
+            }
+        }
+    }
+    .product-image-slider.owl-carousel {
+        overflow: hidden;
+    }
+
+    .woocommerce-product-rating:after {
+        content: none;
+    }
+
+    .variations_form:not(.vf_init) .reset_variations {
+        display: none
+    }
+
+    // Compatibility with Woo Variation Gallery
+    .woo-variation-gallery-trigger {
+        display: none;
+    }
+}
+
+.quickview-wrap .summary {
+    .added_to_cart {
+        font-size: .8em;
+        font-weight: 700;
+        text-transform: uppercase;
+        text-decoration: underline;
+        margin-#{$left}: .5rem;
+    }
+    .single_add_to_cart_button {
+        &.loading {
+            pointer-events: none;
+            opacity: .75;
+        }
+    }
+    .porto-loading-icon {
+        position: static;
+        width: 25px;
+        height: 25px;
+        margin: .5em;
+    }
+}

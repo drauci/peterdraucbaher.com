@@ -1,0 +1,106 @@
+// DIRECTIONAL
+// ---------------------------------------------------------------
+$rtl: 0 !default;
+$dir: ltr !default;
+
+@import "../theme/theme-imports";
+
+/* Sitemap */
+ul {
+    &[class^="wsp-"] {
+        li {
+            margin: 0;
+            padding: 0;
+            display: block;
+            flex: 0 0 100%;
+            width: auto;
+            position: relative;
+            a {
+                @include transition (background .1s);
+                padding: side-values(8px 0 8px 20px);
+                display: block;
+                color: #666;
+                font-size: .9em;
+                line-height: 20px;
+                border-bottom: 1px solid var(--porto-input-bc);
+                &:before {
+                    content: "\f054";
+                    display: inline-block;
+                    position: absolute;
+                    top: 9px;
+                    #{$left}: 9px;
+                    opacity: .7;
+                    font-size: .45rem;
+                }
+                &:hover:before {
+                    animation: arrowLeftRight .6s linear infinite;
+                }
+            }
+            > a.active, &.active > a {
+                font-weight: 700;
+            }
+            ul {
+                list-style: none;
+                margin: side-values(0 0 0 25px);
+                padding: 0;
+            }
+            .wsp-category-title {
+                margin-top: 10px;
+            }
+            .wsp-category-title a {
+                display: inline-block;
+                padding-#{$left}: 0;
+                font-size: 1em;
+
+                &:before {
+                    display: none;
+                }
+                &:hover {
+                    background-color: transparent;
+                }
+            }
+        }
+
+        &.hide-not-active {
+            li {
+                ul {
+                    display: none;
+                }
+                &.active {
+                    ul {
+                        display: block;
+                    }
+                }
+            }
+        }
+
+        &.show-bg-active {
+            .active > a,
+            a.active {
+                background-color: var(--porto-gray-3);
+                &:hover {
+                    background-color: var(--porto-gray-5);
+                }
+            }
+        }
+    }
+}
+
+
+ul[class^="wsp-"] {
+    margin-bottom: 30px;
+    padding: 0;
+    list-style: none;
+    ul {
+        margin-bottom: 5px;
+        margin-top: 5px;
+        list-style: none;
+    }
+}
+h2[class^="wsp-"] {
+    font-size: 1.2em;
+    font-weight: 700;
+    line-height: 24px;
+    margin-bottom: 15px;
+    text-transform: uppercase;
+}

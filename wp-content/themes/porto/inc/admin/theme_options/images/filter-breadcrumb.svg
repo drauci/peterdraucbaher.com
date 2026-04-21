@@ -1,0 +1,41 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="158" height="108" viewBox="0 0 158 108">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #e7e7e7;
+        fill-rule: evenodd;
+      }
+
+      .cls-2 {
+        fill: #ccc;
+      }
+
+      .cls-3 {
+        fill: #e4e4e4;
+      }
+
+      .cls-4 {
+        fill: #9a9a9a;
+      }
+
+      .cls-5 {
+        fill: #bfbfbf;
+      }
+    </style>
+  </defs>
+  <path class="cls-1" d="M7,4H151a3,3,0,0,1,3,3v94a3,3,0,0,1-3,3H7a3,3,0,0,1-3-3V7A3,3,0,0,1,7,4ZM6,17H152v85H6V17Z"/>
+  <circle class="cls-2" cx="12.5" cy="10.5" r="2.5"/>
+  <circle id="Ellipse_1_copy" data-name="Ellipse 1 copy" class="cls-2" cx="19.5" cy="10.5" r="2.5"/>
+  <circle id="Ellipse_1_copy_2" data-name="Ellipse 1 copy 2" class="cls-2" cx="26.5" cy="10.5" r="2.5"/>
+  <rect id="Rounded_Rectangle_1" data-name="Rounded Rectangle 1" class="cls-2" x="107" y="9" width="40" height="3" rx="1.5" ry="1.5"/>
+  <rect id="Rectangle_3_copy" data-name="Rectangle 3 copy" class="cls-3" x="39" y="20" width="81" height="80"/>
+  <rect id="Rectangle_3_copy_7" data-name="Rectangle 3 copy 7" class="cls-2" x="39" y="20" width="81" height="26"/>
+  <rect id="Rectangle_3_copy_3" data-name="Rectangle 3 copy 3" class="cls-4" x="45" y="34" width="12" height="6"/>
+  <rect id="Rectangle_3_copy_6" data-name="Rectangle 3 copy 6" class="cls-4" x="59" y="34" width="12" height="6"/>
+  <rect id="Rectangle_3_copy_8" data-name="Rectangle 3 copy 8" class="cls-4" x="73" y="34" width="12" height="6"/>
+  <rect class="cls-2" x="45" y="54" width="14" height="14"/>
+  <rect id="Rectangle_3_copy_2" data-name="Rectangle 3 copy 2" class="cls-5" x="45" y="26" width="35" height="3"/>
+  <rect id="Rectangle_3_copy_4" data-name="Rectangle 3 copy 4" class="cls-2" x="62" y="58" width="52" height="6"/>
+  <rect id="Rectangle_3_copy_5" data-name="Rectangle 3 copy 5" class="cls-2" x="45" y="72" width="14" height="14"/>
+  <rect id="Rectangle_3_copy_5-2" data-name="Rectangle 3 copy 5" class="cls-2" x="62" y="76" width="52" height="6"/>
+</svg>

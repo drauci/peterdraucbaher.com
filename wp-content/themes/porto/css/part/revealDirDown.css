@@ -1,0 +1,1 @@
+.revealDirDown:after{animation-name:blockSlideToDown}@keyframes blockSlideToDown{0%{top:0;bottom:auto;height:0%}45%{top:0;bottom:auto;height:100%}55%{top:auto;bottom:0;height:100%}to{top:auto;bottom:0;height:0%}}

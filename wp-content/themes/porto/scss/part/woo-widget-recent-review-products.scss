@@ -1,0 +1,32 @@
+.widget_recent_reviews {
+    .product_list_widget {
+        flex-wrap: wrap;
+        li {
+            padding: .5rem 1%;
+            display: block;
+            text-align: center;
+            a {
+                display: block;
+                position: relative;
+                line-height: 1.5em !important;
+                color: var(--porto-body-color);
+            }
+            img {
+                width: 96px;
+                .sidebar & {
+                    width: auto;
+                }
+                border: none;
+                display: block;
+                background: var(--porto-normal-bg);
+                margin: 0 auto 10px;
+            }
+            .star-rating {
+                margin: 5px auto 0;
+            }
+            .reviewer {
+                font-size: .8571em;
+            }
+        }
+    }
+}

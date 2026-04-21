@@ -1,0 +1,64 @@
+// DIRECTIONAL
+// ---------------------------------------------------------------
+$rtl: 0 !default;
+$dir: ltr !default;
+
+@import "../theme/theme-imports";
+
+
+.widget_layered_nav {
+    .yit-wcan-select-open {
+        border-width: 1px;
+    }
+}
+
+.widget_layered_nav .yith-wcan-select-wrapper {
+    display: none;
+    border-width: 1px;
+    border-color: var(--porto-widget-bc);
+    padding: 10px 0;
+    ul.yith-wcan-select.yith-wcan {
+        padding-top: 0;
+        padding-bottom: 0;
+        li {
+            padding: 5px;
+            margin-#{$right}: 17px;
+            border-width: 0;
+            &:hover,
+            &.chosen {
+                box-shadow: none;
+                border-width: 0;
+            }
+            &.chosen {
+                &:before {
+                    content: $fa-var-times;
+                    font-family: var(--fa-style-family-classic, "Font Awesome 6 Free"); 
+                    font-weight: 900;
+                    font-size: 1em;
+                    position: absolute;
+                    top: 50%;
+                    transform: translateY(-50%);
+                    color: var(--porto-dark-color);
+                    padding-#{$left}: 12px;
+                }
+                a {
+                    padding-#{$left}: 28px;
+                    background-image: none;
+                    color: var(--porto-dark-color);
+                }
+            }
+            .count {
+                padding-top: 0;
+            }
+            a {
+                padding: side-values(0 0 0 12px);
+                border-width: 0;
+            }
+            &:hover {
+                a {
+                    color: var(--porto-dark-color);
+                }
+            }
+        }
+    }
+}

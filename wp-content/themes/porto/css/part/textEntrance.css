@@ -1,0 +1,1 @@
+@keyframes textEntrance{0%{opacity:0;transform:translateY(100%) rotateX(-80deg)}to{transform:none;opacity:1}}.textEntrance{transform-origin:center top;transform-style:preserve-3d;transition:opacity 0s cubic-bezier(0.215,0.61,0.355,1),transform 0s cubic-bezier(0.215,0.61,0.355,1);transition-duration:0.8s;animation-name:textEntrance}

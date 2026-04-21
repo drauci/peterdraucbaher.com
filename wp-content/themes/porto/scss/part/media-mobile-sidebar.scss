@@ -1,0 +1,93 @@
+// DIRECTIONAL
+// ---------------------------------------------------------------
+$rtl: 0 !default;
+$dir: ltr !default;
+
+@import "../theme/theme-imports";
+
+.mobile-sidebar {
+    &.sidebar {
+        position: fixed;
+        padding-top: 0;
+        padding-bottom: 0;
+    }
+    margin-top: 0 !important;
+    padding-#{$left}: 0 !important;
+    padding-#{$right}: 0 !important;
+    height: 100%;
+    width: 290px;
+    top: 0;
+    bottom: 0;
+    #{$left}: 0;
+    z-index: 9000;
+    transform: translateX(if-ltr(-100%, 100%));
+    @include transition(transform .2s ease-in-out);
+    background: var(--porto-body-bg);
+
+    .sidebar-toggle {
+        display: block;
+        background: var(--porto-body-bg);
+    }
+    > [data-plugin-sticky] {
+        height: 100%;
+    }
+    .widget {
+        margin-top: 0;
+    }
+
+    .sidebar-content {
+        display: block;
+        overflow-x: hidden;
+        overflow-y: scroll;
+        height: 100%;
+        padding: 20px;
+        -webkit-overflow-scrolling: touch;
+
+        &::-webkit-scrollbar {
+            width: 5px;
+        }
+        &::-webkit-scrollbar-thumb {
+            border-radius: 0px;
+            background: var(--porto-gray-2);
+        }
+    }
+    
+    &.right-sidebar,
+    .column2-right-sidebar &,
+    .column2-wide-right-sidebar & {
+        #{$right}: 0;
+        #{$left}: auto;
+        transform: translateX(if-ltr(100%, -100%));
+    }
+}
+
+html.sidebar-opened {
+    body {
+        > *:not(.mfp-bg):not(.mfp-wrap) {
+            z-index: 0;
+        }
+    }
+    .mobile-sidebar {
+        z-index: 9000;
+        @include transition(transform .3s);
+        transform: translateX(0);
+        .sidebar-toggle {
+            i {
+                &:before {
+                    content: $fa-var-times;
+                }
+            }
+        }
+    }
+    .page-wrapper {
+        #{$left}: 260px;
+        overflow: visible
+    }
+    #header.sticky-header .header-main.sticky {
+        #{$left}: 260px;
+    }
+    &.sidebar-right-opened .page-wrapper,
+    &.sidebar-right-opened #header.sticky-header .header-main.sticky {
+        #{$left}: -260px;
+    }
+}

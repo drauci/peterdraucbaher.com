@@ -1,0 +1,80 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="158" height="180" viewBox="0 0 158 180">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #e7e7e7;
+      }
+
+      .cls-1, .cls-4, .cls-6 {
+        fill-rule: evenodd;
+      }
+
+      .cls-2 {
+        fill: #ccc;
+      }
+
+      .cls-3, .cls-4 {
+        fill: #9a9a9a;
+      }
+
+      .cls-5, .cls-6 {
+        fill: #e4e4e4;
+      }
+    </style>
+  </defs>
+  <image id="Background" width="158" height="180" xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAAJ4AAAC0CAYAAABlspUrAAAB4ElEQVR4nO3SQREAIAzAsIF/z8MF/SQSej27uwOfXcEpGI+E8UgYj4TxSBiPhPFIGI+E8UgYj4TxSBiPhPFIGI+E8UgYj4TxSBiPhPFIGI+E8UgYj4TxSBiPhPFIGI+E8UgYj4TxSBiPhPFIGI+E8UgYj4TxSBiPhPFIGI+E8UgYj4TxSBiPhPFIGI+E8UgYj4TxSBiPhPFIGI+E8UgYj4TxSBiPhPFIGI+E8UgYj4TxSBiPhPFIGI+E8UgYj4TxSBiPhPFIGI+E8UgYj4TxSBiPhPFIGI+E8UgYj4TxSBiPhPFIGI+E8UgYj4TxSBiPhPFIGI+E8UgYj4TxSBiPhPFIGI+E8UgYj4TxSBiPhPFIGI+E8UgYj4TxSBiPhPFIGI+E8UgYj4TxSBiPhPFIGI+E8UgYj4TxSBiPhPFIGI+E8UgYj4TxSBiPhPFIGI+E8UgYj4TxSBiPhPFIGI+E8UgYj4TxSBiPhPFIGI+E8UgYj4TxSBiPhPFIGI+E8UgYj4TxSBiPhPFIGI+E8UgYj4TxSBiPhPFIGI+E8UgYj4TxSBiPhPFIGI+E8UgYj4TxSBiPhPFIGI+E8UgYj4TxSBiPhPFIGI+E8UgYj4TxSBiPhPFIGI+E8UgYj4Tx+G9mHns2BWRDPiAiAAAAAElFTkSuQmCC"/>
+  <path class="cls-1" d="M7,4H151a3,3,0,0,1,3,3V173a3,3,0,0,1-3,3H7a3,3,0,0,1-3-3V7A3,3,0,0,1,7,4ZM6,17H152V174H6V17Z"/>
+  <circle class="cls-2" cx="12.5" cy="10.5" r="2.5"/>
+  <circle id="Ellipse_1_copy" data-name="Ellipse 1 copy" class="cls-2" cx="19.5" cy="10.5" r="2.5"/>
+  <circle id="Ellipse_1_copy_2" data-name="Ellipse 1 copy 2" class="cls-2" cx="26.5" cy="10.5" r="2.5"/>
+  <rect id="Rounded_Rectangle_1" data-name="Rounded Rectangle 1" class="cls-2" x="107" y="9" width="40" height="3" rx="1.5" ry="1.5"/>
+  <rect id="Rectangle_3_copy" data-name="Rectangle 3 copy" class="cls-3" x="21" y="57" width="33" height="15"/>
+  <path id="Rectangle_3_copy_3" data-name="Rectangle 3 copy 3" class="cls-4" d="M21,73.012H37v3H21v-3Z"/>
+  <rect id="Rectangle_3_copy_2" data-name="Rectangle 3 copy 2" class="cls-5" x="21" y="53" width="5" height="2"/>
+  <rect id="Rectangle_3_copy_7" data-name="Rectangle 3 copy 7" class="cls-5" x="27" y="53" width="5" height="2"/>
+  <rect id="Rectangle_3_copy_8" data-name="Rectangle 3 copy 8" class="cls-5" x="33" y="53" width="5" height="2"/>
+  <path id="Rectangle_3_copy_4" data-name="Rectangle 3 copy 4" class="cls-6" d="M21,80.007H54v2H21v-2Z"/>
+  <path id="Rectangle_3_copy_5" data-name="Rectangle 3 copy 5" class="cls-6" d="M21,84.007H54v2H21v-2Z"/>
+  <path id="Rectangle_3_copy_6" data-name="Rectangle 3 copy 6" class="cls-6" d="M21,88.007H54v2H21v-2Z"/>
+  <rect id="Rectangle_3_copy_9" data-name="Rectangle 3 copy 9" class="cls-3" x="62" y="57" width="33" height="15"/>
+  <path id="Rectangle_3_copy_9-2" data-name="Rectangle 3 copy 9" class="cls-4" d="M62,73.012H78v3H62v-3Z"/>
+  <rect id="Rectangle_3_copy_9-3" data-name="Rectangle 3 copy 9" class="cls-5" x="62" y="53" width="5" height="2"/>
+  <rect id="Rectangle_3_copy_9-4" data-name="Rectangle 3 copy 9" class="cls-5" x="68" y="53" width="5" height="2"/>
+  <rect id="Rectangle_3_copy_9-5" data-name="Rectangle 3 copy 9" class="cls-5" x="74" y="53" width="5" height="2"/>
+  <path id="Rectangle_3_copy_9-6" data-name="Rectangle 3 copy 9" class="cls-6" d="M62,80.007H95v2H62v-2Z"/>
+  <path id="Rectangle_3_copy_9-7" data-name="Rectangle 3 copy 9" class="cls-6" d="M62,84.007H95v2H62v-2Z"/>
+  <path id="Rectangle_3_copy_9-8" data-name="Rectangle 3 copy 9" class="cls-6" d="M62,88.007H95v2H62v-2Z"/>
+  <rect id="Rectangle_3_copy_10" data-name="Rectangle 3 copy 10" class="cls-3" x="103" y="57" width="33" height="15"/>
+  <path id="Rectangle_3_copy_10-2" data-name="Rectangle 3 copy 10" class="cls-4" d="M103,73.012h16v3H103v-3Z"/>
+  <rect id="Rectangle_3_copy_10-3" data-name="Rectangle 3 copy 10" class="cls-5" x="103" y="53" width="5" height="2"/>
+  <rect id="Rectangle_3_copy_10-4" data-name="Rectangle 3 copy 10" class="cls-5" x="109" y="53" width="5" height="2"/>
+  <rect id="Rectangle_3_copy_10-5" data-name="Rectangle 3 copy 10" class="cls-5" x="115" y="53" width="5" height="2"/>
+  <path id="Rectangle_3_copy_10-6" data-name="Rectangle 3 copy 10" class="cls-6" d="M103,80.007h33v2H103v-2Z"/>
+  <path id="Rectangle_3_copy_10-7" data-name="Rectangle 3 copy 10" class="cls-6" d="M103,84.007h33v2H103v-2Z"/>
+  <path id="Rectangle_3_copy_10-8" data-name="Rectangle 3 copy 10" class="cls-6" d="M103,88.007h33v2H103v-2Z"/>
+  <rect id="Rectangle_3_copy_11" data-name="Rectangle 3 copy 11" class="cls-3" x="21" y="102" width="33" height="15"/>
+  <path id="Rectangle_3_copy_11-2" data-name="Rectangle 3 copy 11" class="cls-4" d="M21,118.012H37v3H21v-3Z"/>
+  <rect id="Rectangle_3_copy_11-3" data-name="Rectangle 3 copy 11" class="cls-5" x="21" y="98" width="5" height="2"/>
+  <rect id="Rectangle_3_copy_11-4" data-name="Rectangle 3 copy 11" class="cls-5" x="27" y="98" width="5" height="2"/>
+  <rect id="Rectangle_3_copy_11-5" data-name="Rectangle 3 copy 11" class="cls-5" x="33" y="98" width="5" height="2"/>
+  <path id="Rectangle_3_copy_11-6" data-name="Rectangle 3 copy 11" class="cls-6" d="M21,125.007H54v2H21v-2Z"/>
+  <path id="Rectangle_3_copy_11-7" data-name="Rectangle 3 copy 11" class="cls-6" d="M21,129.007H54v2H21v-2Z"/>
+  <path id="Rectangle_3_copy_11-8" data-name="Rectangle 3 copy 11" class="cls-6" d="M21,133.007H54v2H21v-2Z"/>
+  <rect id="Rectangle_3_copy_11-9" data-name="Rectangle 3 copy 11" class="cls-3" x="62" y="102" width="33" height="15"/>
+  <path id="Rectangle_3_copy_11-10" data-name="Rectangle 3 copy 11" class="cls-4" d="M62,118.012H78v3H62v-3Z"/>
+  <rect id="Rectangle_3_copy_11-11" data-name="Rectangle 3 copy 11" class="cls-5" x="62" y="98" width="5" height="2"/>
+  <rect id="Rectangle_3_copy_11-12" data-name="Rectangle 3 copy 11" class="cls-5" x="68" y="98" width="5" height="2"/>
+  <rect id="Rectangle_3_copy_11-13" data-name="Rectangle 3 copy 11" class="cls-5" x="74" y="98" width="5" height="2"/>
+  <path id="Rectangle_3_copy_11-14" data-name="Rectangle 3 copy 11" class="cls-6" d="M62,125.007H95v2H62v-2Z"/>
+  <path id="Rectangle_3_copy_11-15" data-name="Rectangle 3 copy 11" class="cls-6" d="M62,129.007H95v2H62v-2Z"/>
+  <path id="Rectangle_3_copy_11-16" data-name="Rectangle 3 copy 11" class="cls-6" d="M62,133.007H95v2H62v-2Z"/>
+  <rect id="Rectangle_3_copy_11-17" data-name="Rectangle 3 copy 11" class="cls-3" x="103" y="102" width="33" height="15"/>
+  <path id="Rectangle_3_copy_11-18" data-name="Rectangle 3 copy 11" class="cls-4" d="M103,118.012h16v3H103v-3Z"/>
+  <rect id="Rectangle_3_copy_11-19" data-name="Rectangle 3 copy 11" class="cls-5" x="103" y="98" width="5" height="2"/>
+  <rect id="Rectangle_3_copy_11-20" data-name="Rectangle 3 copy 11" class="cls-5" x="109" y="98" width="5" height="2"/>
+  <rect id="Rectangle_3_copy_11-21" data-name="Rectangle 3 copy 11" class="cls-5" x="115" y="98" width="5" height="2"/>
+  <path id="Rectangle_3_copy_11-22" data-name="Rectangle 3 copy 11" class="cls-6" d="M103,125.007h33v2H103v-2Z"/>
+  <path id="Rectangle_3_copy_11-23" data-name="Rectangle 3 copy 11" class="cls-6" d="M103,129.007h33v2H103v-2Z"/>
+  <path id="Rectangle_3_copy_11-24" data-name="Rectangle 3 copy 11" class="cls-6" d="M103,133.007h33v2H103v-2Z"/>
+  <path id="Featured_Posts" data-name="Featured Posts" class="cls-4" d="M19.786,33.533v7.678h1.54V37.944h2.453V36.756H21.326V34.743h3.2v-1.21H19.786Zm10.235,1.2v-1.21H25.566v7.689h4.455V39.99H27.106V37.911h2.585V36.723H27.106V34.732h2.915Zm6.539,6.479h1.628l-2.761-7.689H33.634l-2.761,7.689H32.49L33,39.748h3.058ZM33.4,38.549L34.525,35.3l1.122,3.245H33.4Zm5.316-5.016v1.21h2.046v6.468H42.3V34.743h2.046v-1.21H38.719Zm6.165,0v4.741a3.156,3.156,0,0,0,.407,1.656A2.594,2.594,0,0,0,46.4,40.947a3.5,3.5,0,0,0,1.556.341,3.6,3.6,0,0,0,1.579-.341,2.686,2.686,0,0,0,1.133-1.017,3.061,3.061,0,0,0,.424-1.656V33.533H49.537v4.741a1.63,1.63,0,0,1-.407,1.194,1.55,1.55,0,0,1-1.155.413,1.534,1.534,0,0,1-1.144-.413,1.629,1.629,0,0,1-.407-1.194V33.533h-1.54Zm13.544,7.678L56.591,38.1a2.261,2.261,0,0,0,1.309-.841,2.286,2.286,0,0,0,.44-1.37,2.312,2.312,0,0,0-.313-1.194,2.191,2.191,0,0,0-.941-0.847,3.365,3.365,0,0,0-1.518-.313H52.686v7.678h1.54V38.219h0.726l1.694,2.992h1.782Zm-4.2-6.435h1.287a1.286,1.286,0,0,1,.935.3,1.126,1.126,0,0,1,.308.841,1.144,1.144,0,0,1-.308.847,1.271,1.271,0,0,1-.935.308H54.226v-2.3Zm9.7-.044v-1.21H59.466v7.689h4.455V39.99H61.006V37.911h2.585V36.723H61.006V34.732h2.915Zm4.009-1.2H65.246v7.678H67.93a4.586,4.586,0,0,0,2.129-.473A3.4,3.4,0,0,0,71.477,39.4a3.954,3.954,0,0,0,.5-2.019,4.015,4.015,0,0,0-.5-2.029,3.381,3.381,0,0,0-1.419-1.348,4.588,4.588,0,0,0-2.129-.473h0Zm-0.055,6.424H66.786V34.82h1.089a2.482,2.482,0,0,1,1.87.682,3.016,3.016,0,0,1-.006,3.773,2.485,2.485,0,0,1-1.864.682h0ZM81.4,35.909a2.384,2.384,0,0,0-.314-1.221,2.147,2.147,0,0,0-.941-0.847,3.418,3.418,0,0,0-1.518-.308H75.806v7.678h1.54V38.263h1.287a3.321,3.321,0,0,0,1.568-.33,2.142,2.142,0,0,0,.913-0.869,2.392,2.392,0,0,0,.291-1.155h0Zm-2.838,1.144H77.346v-2.3h1.221a1.3,1.3,0,0,1,.946.3,1.142,1.142,0,0,1,.308.852,1.118,1.118,0,0,1-.314.836,1.291,1.291,0,0,1-.941.308h0Zm7.583,4.235a3.978,3.978,0,0,0,1.98-.506,3.737,3.737,0,0,0,1.425-1.4,4.181,4.181,0,0,0,0-4.048,3.751,3.751,0,0,0-1.419-1.4,4.138,4.138,0,0,0-3.965,0,3.778,3.778,0,0,0-1.43,1.4,4.143,4.143,0,0,0,0,4.048,3.775,3.775,0,0,0,1.43,1.4,3.977,3.977,0,0,0,1.98.506h0Zm0-1.419a2.375,2.375,0,0,1-1.227-.313,2.159,2.159,0,0,1-.831-0.88,3.106,3.106,0,0,1,0-2.651,2.124,2.124,0,0,1,.831-0.874,2.41,2.41,0,0,1,1.227-.308,2.38,2.38,0,0,1,1.221.308,2.136,2.136,0,0,1,.825.874,3.106,3.106,0,0,1,0,2.651,2.172,2.172,0,0,1-.825.88,2.346,2.346,0,0,1-1.221.313h0Zm7.867,1.419a3.19,3.19,0,0,0,1.463-.314,2.253,2.253,0,0,0,.935-0.841,2.173,2.173,0,0,0,.319-1.144,1.834,1.834,0,0,0-.341-1.155,2.2,2.2,0,0,0-.814-0.66,8.99,8.99,0,0,0-1.221-.44q-0.55-.165-0.853-0.291A1.546,1.546,0,0,1,93,36.112a0.693,0.693,0,0,1-.2-0.512,0.88,0.88,0,0,1,.27-0.7,1.053,1.053,0,0,1,.721-0.236,1.265,1.265,0,0,1,.831.258,0.911,0.911,0,0,1,.335.688h1.694A2.141,2.141,0,0,0,95.826,34a3.055,3.055,0,0,0-1.93-.578,3.483,3.483,0,0,0-1.408.27,2.169,2.169,0,0,0-.957.776,2.075,2.075,0,0,0-.341,1.188,1.849,1.849,0,0,0,.335,1.16,2.126,2.126,0,0,0,.8.649,9.228,9.228,0,0,0,1.215.434,8.723,8.723,0,0,1,.864.28,1.467,1.467,0,0,1,.522.346,0.783,0.783,0,0,1,.209.561,0.881,0.881,0,0,1-.308.7,1.26,1.26,0,0,1-.847.264,1.159,1.159,0,0,1-.831-0.286A1.119,1.119,0,0,1,92.818,39h-1.65a2.084,2.084,0,0,0,.385,1.221,2.372,2.372,0,0,0,1.017.792,3.645,3.645,0,0,0,1.447.275h0Zm3.722-7.755v1.21h2.046v6.468h1.54V34.743h2.046v-1.21H97.739Zm8.838,7.755a3.192,3.192,0,0,0,1.463-.314,2.258,2.258,0,0,0,.935-0.841,2.178,2.178,0,0,0,.319-1.144,1.836,1.836,0,0,0-.341-1.155,2.2,2.2,0,0,0-.814-0.66,9.05,9.05,0,0,0-1.221-.44q-0.55-.165-0.853-0.291a1.548,1.548,0,0,1-.506-0.33,0.692,0.692,0,0,1-.2-0.512,0.879,0.879,0,0,1,.269-0.7,1.055,1.055,0,0,1,.721-0.236,1.265,1.265,0,0,1,.83.258,0.912,0.912,0,0,1,.336.688h1.694a2.144,2.144,0,0,0-.82-1.611,3.053,3.053,0,0,0-1.93-.578,3.481,3.481,0,0,0-1.408.27,2.167,2.167,0,0,0-.957.776,2.07,2.07,0,0,0-.341,1.188,1.847,1.847,0,0,0,.335,1.16,2.128,2.128,0,0,0,.8.649,9.249,9.249,0,0,0,1.216.434,8.76,8.76,0,0,1,.863.28,1.474,1.474,0,0,1,.523.346,0.783,0.783,0,0,1,.209.561,0.882,0.882,0,0,1-.308.7,1.261,1.261,0,0,1-.847.264,1.161,1.161,0,0,1-.831-0.286,1.118,1.118,0,0,1-.335-0.77h-1.65a2.078,2.078,0,0,0,.385,1.221,2.369,2.369,0,0,0,1.017.792,3.646,3.646,0,0,0,1.447.275h0Z"/>
+</svg>

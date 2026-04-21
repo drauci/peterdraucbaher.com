@@ -1,0 +1,551 @@
+// DIRECTIONAL
+// ---------------------------------------------------------------
+$rtl: 0 !default;
+$dir: ltr !default;
+
+@import "../theme/theme-imports";
+@import "../plugins/easy-responsive-tabs/easy-responsive-tabs";
+/* comments.scss */
+#comments {
+    h2 {
+        margin-top: 0;
+    }
+}
+
+.commentlist {
+    list-style: none;
+    margin: 15px 0;
+    padding: 0;
+    @include clearfix;
+    li {
+        clear: both;
+        margin-bottom: 20px;
+
+        &:last-child {
+            margin-bottom: 0;
+        }
+
+        .comment_container {
+            @media #{$screen-small} {
+                background: var(--porto-title-bgc);
+                padding: 10px 10px 15px;
+            }
+        }
+        .comment-text {
+            padding: 20px;
+            position: relative;
+            background: var(--porto-title-bgc);
+
+            @media #{$screen-small} {
+                padding: 0;
+                background: transparent;
+            }
+
+            p {
+                font-size: 0.9em;
+                line-height: 21px;
+                margin: 0;
+                padding: 0;
+            }
+            .meta {
+                font-size: 1em;
+                margin: 0;
+                strong {
+                    display: inline-block;
+                    line-height: 21px;
+                    margin: 0;
+                    padding: 0 0 5px 0;
+                    @media #{$screen-small} {
+                        display: block;
+                        padding-bottom: 0;
+                    }
+                }
+                time {
+                    color: #999;
+                    font-size: 0.9em;
+                }
+            }
+        }
+    }
+}
+
+.comment-reply-title {
+    font-size: 1.4em;
+    font-weight: 600;
+    line-height: 27px;
+    margin: 0 0 14px 0;
+}
+
+.comment-form-rating {
+    margin-bottom: 1rem;
+    label {
+        display: inline-block;
+        margin-#{$right}: 10px;
+        margin-bottom: 0;
+    }
+    .stars {
+        display: inline-block;
+        position: relative;
+        top: -.5em;
+        white-space: nowrap;
+
+        span a {
+            position: absolute;
+            top: 0;
+            #{$left}: 0;
+            font-size: 14px;
+            text-indent: -9999em;
+            transition: .2s;
+
+            &:before {
+                color: #706f6c;
+                content: "";
+                position: absolute;
+                #{$left}: 0;
+                height: 24px;
+                text-indent: 0;
+                letter-spacing: 1px;
+            }
+            &:hover {
+                &:before {
+                    color: #706f6c;
+                }
+            }
+        }
+
+        .star-1 {
+            z-index: 10;
+            &:before {
+                width: 17px;
+            }
+            &:hover,
+            &.active {
+                &:before {
+                    content: $fa-var-star;
+                }
+            }
+        }
+        .star-2 {
+            z-index: 9;
+            &:before {
+                width: 34px;
+            }
+            &:hover,
+            &.active {
+                &:before {
+                    content: $fa-var-star$fa-var-star;
+                }
+            }
+        }
+        .star-3 {
+            z-index: 8;
+            &:before {
+                width: 51px;
+            }
+            &:hover,
+            &.active {
+                &:before {
+                    content: $fa-var-star$fa-var-star$fa-var-star;
+                }
+            }
+        }
+        .star-4 {
+            z-index: 7;
+            &:before {
+                width: 68px;
+            }
+            &:hover,
+            &.active {
+                &:before {
+                    content: $fa-var-star$fa-var-star$fa-var-star$fa-var-star;
+                }
+            }
+        }
+        .star-5 {
+            z-index: 6;
+            &:before {
+                content: $fa-var-star$fa-var-star$fa-var-star$fa-var-star$fa-var-star;
+                font-weight: 400;
+            }
+            &:hover,
+            &.active {
+                &:before {
+                    font-weight: 900;
+                }
+            }
+        }
+    }
+}
+
+
+/* product.scss */
+.product-nav {
+    position: absolute;
+    top: 0;
+    margin-top: calc(1.125rem - 14px);
+    /*#{$right}: ($grid-gutter-width / 2);*/
+    #{$right}: 10px;
+    @include clearfix;
+    z-index: 1;
+    .elementor-widget-container &,
+    .elementor-widget & {
+        #{$right}: 0;
+    }
+    .product-prev,
+    .product-next {
+        float: $left;
+        margin-#{$left}: .125rem;
+
+        &:hover {
+            .product-popup {
+                display: block;
+            }
+        }
+    }
+
+    a {
+        display: block;
+        color: var(--porto-heading-color);
+        &:hover, &:focus {
+            color: var(--porto-heading-color);
+        }
+    }
+
+    .product-link {
+        font-size: 16px;
+        width: 28px;
+        height: 28px;
+        line-height: 23px;
+        border: 2px solid var(--porto-gray-2);
+        border-radius: 14px;
+        display: inline-block;
+        text-align: center;
+        font-family: "porto";
+
+        &.disabled {
+            cursor: default;
+            opacity: .5;
+        }
+    }
+
+    .product-prev {
+        .product-link {
+            &:before {
+                content: if-ltr('\e819', '\e81a');
+            }
+        }
+
+        .product-popup {
+            &:before {
+                #{$right}: 36px;
+            }
+        }
+    }
+
+    .product-next {
+        .product-link {
+            &:before {
+                content: if-ltr('\e81a', '\e819');
+            }
+        }
+
+        .product-popup {
+            &:before {
+                #{$right}: 7px;
+            }
+        }
+    }
+
+    .featured-box {
+        display: block;
+        margin: 0;
+        text-align: $left;
+        border-width: 0;
+        box-shadow: $menu-narrow-box-shadow;
+
+        .box-content {
+            display: block;
+            padding: 10px;
+            @include clearfix;
+        }
+    }
+
+    .product-popup {
+        display: none;
+        position: absolute;
+        top: 32px;
+        #{$right}: 0;
+        font-size: .9286em;
+        z-index: 999;
+
+        &:before {
+            border-bottom: 7px solid var(--porto-heading-color);
+            border-left: 7px solid transparent !important;
+            border-right: 7px solid transparent !important;
+            content: "";
+            position: absolute;
+            top: -5px
+        }
+
+        .page-top & {
+            color: var(--porto-body-color);
+            &:before {
+                border-bottom-color: var(--porto-primary-color);
+            }
+        }
+
+        .box-content {
+            border-top: 3px solid var(--porto-heading-color);
+        }
+
+        .product-image {
+            padding: 0;
+            width: 90px;
+
+            img {
+                width: 100%;
+                height: auto;
+            }
+        }
+
+        .product-details {
+
+            .product-title {
+                display: -webkit-box;
+                -webkit-line-clamp: 2;
+                -webkit-box-orient: vertical;
+                overflow: hidden;
+                padding-top: 5px;
+                line-height: 1.4em;
+                font-size: 12px;
+                font-weight: 600;
+                text-align: center;
+                color: var(--porto-color-price);
+            }
+
+            .amount {
+                font-size: 1.0714em;
+                font-weight: $font-weight-semibold;
+                line-height: 1;
+                vertical-align: middle;
+                color: var(--porto-color-price);
+                .currency,
+                .decimal {
+                    font-size: .75em;
+                    font-weight: $font-weight-normal;
+                }
+                .currency {
+                    .decimal {
+                        font-size: 1em;
+                    }
+                }
+            }
+            ins {
+                text-decoration: none;
+                vertical-align: baseline;
+            }
+            del,
+            .from {
+                color: $color-old-price;
+                font-size: .8em;
+                margin-#{$right}: 3px;
+                vertical-align: baseline;
+                .amount {
+                    color: $color-old-price;
+                }
+            }
+        }
+    }
+}
+
+.elementor-widget-porto_cp_wishlist,
+.wpb-sp-wishlist {
+    .yith-wcwl-add-to-wishlist span:not(.yith-wcwl-tooltip) {
+        width: auto;
+        text-indent: 0;
+    }
+}
+
+
+#product-tab {
+    &:not(:last-child) {
+        margin-bottom: 1.5rem;
+    }
+
+    .tab-content h2 {
+        margin-bottom: 0.7em;
+    }
+
+    .tab-content > h2:first-child {
+        display: none;
+    }
+}
+
+#reviews {
+    .commentlist {
+        li {
+            position: relative;
+            padding-#{$left}: 115px;
+            @media #{$screen-small} {
+                padding-#{$left}: 0;
+            }
+        }
+        .img-thumbnail {
+            position: absolute;
+            #{$left}: 0;
+            top: 0;
+
+            img {
+                max-width: 80px;
+                height: auto;
+            }
+
+            @media #{$screen-small} {
+                position: static;
+                margin: side-values(0 12px 10px 0);
+                float: $left;
+
+                img {
+                    max-width: 60px;
+                }
+            }
+        }
+        .comment-text {
+            min-height: 90px;
+
+            &:before {
+                content: "";
+                border-bottom: 15px solid transparent;
+                #{$left}: -15px;
+                border-top: 15px solid transparent;
+                border-#{$right}: 15px solid var(--porto-gray-1);
+                height: 0;
+                position: absolute;
+                top: 28px;
+                width: 0;
+
+                @media #{$screen-small} {
+                    display: none;
+                }
+            }
+        }
+        .star-rating {
+            float: $right;
+            @media #{$screen-small} {
+                float: none;
+            }
+        }
+    }
+}
+
+.products.related {
+    padding-bottom: 1.875rem;
+    margin-bottom: 0;
+}
+.main-content .products.related {
+    padding-bottom: .5rem;
+}
+#content-bottom + .products.related {
+    margin-top: 2.5rem;
+}
+
+
+/* Tabs Styles */
+h2.resp-accordion {
+    padding: 15px !important;
+    line-height: 1.4;
+    font-size: 1em;
+}
+.resp-arrow {
+    display: none;
+}
+.tab-content {
+    h2 {
+        font-size: 1.4286em;
+        line-height: 1.4;
+        font-weight: 400;
+        margin-bottom: 1.0714em;
+    }
+
+    p {
+        margin-bottom: 10px;
+    }
+
+    table {
+        margin-top: 20px;
+        p {
+            margin: 0;
+        }
+    }
+
+    *:last-child {
+        margin-bottom: 0;
+    }
+}
+
+.woocommerce-tabs {
+    .tab-content {
+        border: none;
+        border-top: solid 1px var(--porto-gray-2);
+        box-shadow: none;
+        padding: 30px 0 15px;
+        @media #{$screen-medium} {
+            border-top: none;
+        }
+        p {
+            font-size: 14px;
+            font-weight: 400;
+            letter-spacing: .005em;
+            line-height: 1.9;
+        }
+    }
+    .resp-tabs-list {
+        padding-bottom: 1px;
+        border-bottom: none;
+        li {
+            font-weight: 700;
+            color: #818692 !important;
+            text-transform: uppercase;
+            background: transparent !important;
+            border: none !important;
+            border-bottom: 2px solid transparent !important;
+            padding: 7px 0 !important;
+            border-radius: 0 !important;
+            margin-#{$right}: 35px;
+            &:hover, &.resp-tab-active {
+                border-color: var(--porto-heading-color) !important;
+            }
+            &.resp-tab-active {
+                color: var(--porto-heading-color) !important;
+            }
+        }
+    }
+    h2.resp-accordion {
+        border-top: none !important;
+        border-left: none;
+        border-right: none;
+        background: none !important;
+        text-transform: uppercase;
+        font-weight: bold;
+        color: var(--porto-heading-color);
+        &:before {
+            content: '\e81c';
+            font-family: 'porto';
+            float: $left;
+            margin-#{$right}: 10px;
+        }
+    }
+    h2.resp-tab-active {
+        border-bottom: 2px solid var(--porto-primary-color) !important;
+        &:before {
+            content: '\e81b';
+        }
+    }
+}
+
+.sp-linked-heading {
+    font-size: 1rem;
+    text-transform: uppercase;
+    margin-bottom: 1.5rem;
+    border-bottom: 1px solid #00000014;
+}

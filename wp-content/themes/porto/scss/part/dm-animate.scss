@@ -1,0 +1,11 @@
+@media (max-width: 767px) {
+    .porto-dm-animate {
+        .elementor-invisible,
+        .appear-animation,
+        [data-appear-animation],
+        [data-vce-animate] {
+            opacity: 1;
+            visibility: visible;
+        }
+    }
+}

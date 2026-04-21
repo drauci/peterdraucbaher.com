@@ -1,0 +1,58 @@
+// DIRECTIONAL
+// ---------------------------------------------------------------
+$rtl: 0 !default;
+$dir: ltr !default;
+
+@import "../theme/theme-imports";
+
+// Widget Twitter Tweets
+.widget.twitter-tweets {
+    .fa-twitter {
+        clear: both;
+        font-size: 1.5em;
+        color: var(--porto-heading-color);
+        position: relative;
+        top: 3px;
+        margin-#{$right}: -22px;
+        #{$left}: -30px;
+    }
+    .meta {
+        color: #999;
+        display: block;
+        font-size: 0.9em;
+        padding-top: 3px;
+        margin-bottom: 20px;
+        &:last-child {
+            margin-bottom: 0;
+        }
+    }
+    ul {
+        list-style: none;
+        margin: 0;
+        padding: 0;
+        border-width: 0;
+
+        li {
+            border-width: 0;
+            padding: side-values(20px 0 0 30px);
+
+            &:first-child {
+                padding-top: 0;
+            }
+        }
+    }
+}
+.twitter-account {
+    color: #FFF;
+    display: block;
+    font-size: 0.9em;
+    margin: -15px 0 5px;
+    opacity: 0.55;
+    &:hover {
+        opacity: 1;
+    }
+}
+
+.footer .twitter-tweets .meta {
+    opacity: .5;
+}

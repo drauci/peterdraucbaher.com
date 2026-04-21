@@ -1,0 +1,187 @@
+/* Posts */
+.blog-posts {
+    position: relative;
+    @include clearfix();
+
+    article {
+        border-bottom: 1px solid var(--porto-normal-bc);
+        margin-bottom: 50px;
+        padding-bottom: 1rem;
+
+        h2 {
+            &.show-content {
+                margin-bottom: 25px;
+            }
+        }
+    }
+    .pagination {
+        margin: -10px 0 20px;
+    }
+    .post .entry-title {
+        font-size: 1.5em;
+        line-height: 1.3;
+        font-weight: 600;
+        margin-bottom: 1rem;
+        word-break: break-word
+    }
+    .post-full, .post-large, .post-large-alt {
+        .entry-title {
+            font-size: 1.8em;
+        }
+    }
+}
+
+.blog-posts-widget {
+    overflow: hidden;
+}
+
+/* Pagination */
+.pagination-wrap {
+    text-align: center;
+
+    .pagination,
+    .page-links {
+        float: none;
+        justify-content: center;
+
+        > a,
+        > span {
+            float: none;
+        }
+    }
+}
+.pagination,
+.page-links {
+    float: $right;
+    margin: 20px 0 0;
+
+    > a,
+    > span {
+        border: 1px solid var(--porto-gray-5);
+        margin-#{$left}: -1px;
+        float: $left;
+        display: inline-block;
+        padding: .5rem .75rem;
+        line-height: 1.2;
+        text-decoration: none;
+        text-align: center;
+        min-width: 2.125rem;
+    }
+
+    span.dots {
+        border-width: 0;
+        position: relative;
+        top: -2px;
+    }
+
+    span.current {
+        color: $color-arrow-hover;
+        background: var(--porto-primary-color);
+        border-color: var(--porto-primary-color);
+    }
+    a:hover,
+    a:focus {
+        position: relative;
+        z-index: 2;
+        background-color: var(--porto-gray-5);
+        border-color: var(--porto-gray-5);
+    }
+}
+
+.pagination .prev,
+.page-links .previouspagelink,
+.pagination .next,
+.page-links .nextpostslink {
+    text-indent: -9999px;
+    width: 2.48em;
+    overflow: hidden;
+    position: relative;
+
+    &:before {
+        position: absolute;
+        top: 0.5rem;
+        left: 0;
+        right: 0;
+        text-indent: 0;
+    }
+}
+
+.pagination .prev:before,
+.page-links .previouspagelink:before {
+    content: if-ltr($fa-var-angle-left, $fa-var-angle-right);
+}
+
+.pagination .next:before,
+.page-links .nextpagelink:before {
+    content: if-ltr($fa-var-angle-right, $fa-var-angle-left);
+}
+
+.load-infinite .pagination {
+    display: none
+}
+
+/* Post pages */
+.page-links {
+    float: none;
+    @include clearfix;
+
+    .screen-reader-text {
+        display: none !important;
+    }
+    .page-links-title {
+        border-width: 0;
+        margin: 0;
+        padding: 0;
+    }
+}
+
+/* Grid */
+.blog-posts article.post-grid,
+.blog-posts article.post-masonry {
+    border-width: 0;
+    margin-bottom: 30px;
+    padding-bottom: 0;
+}
+
+.posts-grid {
+
+    @media #{$screen-medium} {
+        .post {
+            position: static !important;
+            width: 100%;
+            @include transition(none !important);
+            transform: none !important;
+        }
+    }
+}
+
+.blog-share {
+    margin-bottom: 25px;
+    .share-links {
+        a {
+            margin: .2857em 0 .2857em .5714em;
+        }
+    }
+}
+
+/* Blog Like */
+.blog-like {
+	i {
+		display: none;
+	}
+}
+.blog-liked {
+	i {
+		display: none;
+	}
+}
+
+/* archive posts */
+.porto-post-title {
+    a {
+        color: inherit;
+        &:hover {
+            color: var(--porto-primary-color)
+        }
+    }
+}

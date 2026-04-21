@@ -1,0 +1,45 @@
+// DIRECTIONAL
+// ---------------------------------------------------------------
+$rtl: 0 !default;
+$dir: ltr !default;
+
+@import "../theme/theme-imports";
+
+// Widget Contact Info
+.widget.contact-info {
+    ul,
+    li {
+        border-width: 0;
+        margin: 0;
+        padding: 0;
+    }
+    li {
+        a:hover {
+            text-decoration: underline;
+        }
+        &:not(:last-child) {
+            margin-bottom: 10px;
+        }
+    }
+    p {
+        margin-bottom: 10px;
+    }
+    i {
+        clear: both;
+        float: $left;
+        text-align: center;
+        width: 16px;
+        top: -2px;
+        margin: side-values(4px 9px 10px 0);
+        font-size: 1.3em;
+        position: static !important;
+    }
+    .contact-info-block {
+        .contact-details {
+            strong, span {
+                display: block;
+                padding-#{$left}: 25px;
+            }
+        }
+    }
+}

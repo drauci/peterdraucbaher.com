@@ -1,0 +1,18 @@
+// Woocommerce yith widgets
+.yith-woo-ajax-reset-navigation {
+    // background: transparent;
+    // border-width: 0;
+    // border-radius: 0;
+    // > * {
+    //     padding: 0;
+    // }
+    .button {
+        background-color: var(--porto-heading-color);
+        border-color: var(--porto-heading-color);
+        color: var(--porto-body-bg);
+        &:hover {
+            background-color: var(--porto-heading-light-8);
+            border-color: var(--porto-heading-light-8);
+        }
+    }
+}

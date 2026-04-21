@@ -1,0 +1,1 @@
+.revealDirRight:after{animation-name:blockSlideToRight}@keyframes blockSlideToRight{0%{left:0;right:auto;width:0%}45%{left:0;right:auto;width:100%}55%{left:auto;right:0;width:100%}to{left:auto;right:0;width:0%}}

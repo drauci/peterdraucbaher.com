@@ -1,0 +1,54 @@
+.content-collapse-wrap {
+    &.wpb_wrapper,
+    &.e-con > .e-con-inner,
+    &.e-con.e-con-full,
+    & > .elementor-column-wrap > .elementor-widget-wrap,
+    & > .elementor-widget-wrap,
+    &.elementor-widget-wrap,
+    &.elementor-column-wrap > .elementor-widget-wrap {
+        position: relative;
+        max-height: 200px;
+        overflow: hidden;
+    }
+    &.opened.wpb_wrapper,
+    &.opened.e-con > .e-con-inner,
+    &.opened.e-con.e-con-full,
+    &.opened > .elementor-column-wrap > .elementor-widget-wrap,
+    &.opened > .elementor-widget-wrap,
+    &.opened.elementor-widget-wrap,
+    &.opened.elementor-column-wrap > .elementor-widget-wrap {
+        max-height: 100% !important;
+    }
+    &.wpb_wrapper:not(.opened),
+    &.e-con.e-con-full:not(.opened),
+    &.e-con:not(.opened) > .e-con-inner,
+    &:not(.opened)>.elementor-column-wrap>.elementor-widget-wrap,
+    &:not(.opened)>.elementor-widget-wrap,
+    &.elementor-column-wrap:not(.opened)>.elementor-widget-wrap,
+    &.elementor-widget-wrap:not(.opened) {
+        >.btn-read-more-wrap {
+            position: absolute;
+            bottom: var( --bc-padding-block-end, var(--padding-block-end, var( --porto-column-spacing, 10px ) ) ) ;
+            z-index: 11;
+            left: 0;
+            right: 0;
+            padding-left: inherit;
+            padding-right: inherit;
+        }
+        &:after {
+            display: block;
+            content: '';
+            position: absolute;
+            inset-inline: 0;
+            bottom: 0;
+            z-index: 10;
+            height: calc(120px + var(--padding-block-end, 0px));
+            background-image: linear-gradient( transparent, currentcolor 70% );
+            color: #fff;
+        }
+    }
+    .btn-read-more-action,
+    .btn-read-more-wrap > button {
+        box-shadow: none !important;
+    }
+}

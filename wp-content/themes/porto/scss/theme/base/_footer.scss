@@ -1,0 +1,198 @@
+/* Footer */
+.footer-wrapper {
+    &.wide {
+        .container {
+            width: 100%;
+            max-width: none;
+        }
+    }
+}
+
+.footer {
+    font-size: .9em;
+    padding: 0;
+    position: relative;
+    clear: both;
+
+    a:not(.btn) {
+        transition: color .2s ease-in-out,background-color .2s ease-in-out,border-color .2s ease-in-out;
+    }
+
+    p {
+        font-size: 1em;
+    }
+
+    form {
+        opacity: .85;
+    }
+
+    ul.list {
+        li {
+            margin-bottom: 5px;
+        }
+    }
+
+    .widget-title {
+        margin-bottom: 1rem;
+        font-size: 1em;
+
+        &,
+        a {
+            font-weight: $font-weight-semibold;
+        }
+
+        img {
+            margin-#{$right}: 3px;
+            margin-top: -2px;
+        }
+    }
+
+    .thumbnail,
+    .img-thumbnail {
+        padding: 0;
+        border-width: 0;
+        background: transparent;
+    }
+
+    .widget {
+
+        > div > ul,
+        > ul {
+            font-size: 1em;
+        }
+
+        .tagcloud a {
+            background: #000;
+            color: #fff;
+            padding: 0.5rem 0.8em;
+            border-radius: .25rem;
+        }
+
+        p {
+            margin-top: -3px;
+            margin-bottom: 13px;
+        }
+    }
+}
+#footer {
+    .footer-bottom {
+        padding: 22px 0;
+        font-size: 0.9em;
+    }
+    .container {
+        position: relative;
+        input:focus {
+            box-shadow: none;
+        }
+    }
+    .logo {
+        display: inline-block;
+        margin-#{$right}: calc( var(--porto-column-spacing) + 10px );
+
+        @media #{$screen-normal} {
+            display: block;
+            margin-bottom: 15px;
+            margin-#{$right}: 0;
+        }
+
+        img {
+            display: inline-block;
+            max-width: 80px;
+        }
+    }
+}
+
+.footer-wrapper {
+    &.simple,
+    &.fixed {
+        #footer {
+            padding-top: 0;
+            background: none;
+        }
+    }
+}
+
+#footer-boxed {
+    padding-left: 0;
+    padding-right: 0;
+    margin-top: 15px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.footer a:not(.btn).link-hover-style-1 {
+    position: relative;
+    left: 0;
+    transition: left .1s ease-in-out;
+    &:hover {
+        left: 3px;
+    }
+}
+
+.footer-reveal, .footer-wrapper.fixed {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    z-index: 10;
+}
+
+.footer-reveal {
+    z-index: -10;
+}
+
+.payment-icons .payment-icon {
+    display: inline-flex;
+    vertical-align: middle;
+    margin: 0 1px 5px;
+    width: 55px;
+    height: 32px;
+    transition: opacity .25s;
+    filter: invert(1);
+    border-radius: 4px;
+    color: #000;
+    font-size: 43px;
+    padding-top: 2px;
+    align-items: center;
+    justify-content: center;
+    background-color: #D6D3CF;
+    &:hover {
+        opacity: .7;
+    }
+}
+.payment-icons .stripe {
+    background-image: url(../images/payment-stripe.png);
+    background-size: 60% auto;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.visa:before, 
+.paypal:before, 
+.verisign:before {
+    font-family: "porto";
+    font-style: normal;
+    font-weight: normal;
+    speak: none;
+    display: inline-block;
+    text-decoration: inherit;
+    width: 1em;
+    margin-right: .1em;
+    text-align: center;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1em;
+    margin-left: .1em;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale
+}
+.paypal:before {
+    content: '\e926'
+}
+
+.verisign:before {
+    content: '\e927'
+}
+
+.visa:before {
+    content: '\e928'
+}

@@ -1,0 +1,70 @@
+// DIRECTIONAL
+// ---------------------------------------------------------------
+$rtl: 0 !default;
+$dir: ltr !default;
+
+@import "../theme/theme-imports";
+
+.side-menu-accordion {
+    li.menu-item > .arrow {
+        display: inline-block;
+        width: 30px;
+        #{$right}: 10px;
+        cursor: pointer;
+        bottom: auto;
+        top: 2.5px;
+        z-index: 2;
+    }
+
+    .menu-item .popup {
+        &:before {
+            display: none;
+        }
+        > .inner {
+            padding: side-values(10px 0 0 5px);
+        }
+
+        .sub-menu {
+            padding: side-values(5px 0 5px 15px);
+        }
+    }
+    .wide .popup {
+        > .inner { padding-#{$left}: 12px; }
+        li.sub {
+            padding: 0;
+            > .arrow {
+                top: -3px;
+            }
+        }
+    }
+
+    .narrow ul.sub-menu ul.sub-menu,
+    > li.menu-item .popup {
+        animation: none;
+    }
+
+    .popup,
+    .narrow ul.sub-menu ul.sub-menu {
+        position: static;
+    }
+    .narrow li.menu-item:hover > ul.sub-menu {
+        display: none;
+    }
+    .narrow ul.sub-menu {
+        box-shadow: none;
+        padding: 0;
+    }
+    .wide .popup {
+        box-shadow: none;
+        > .inner > ul.sub-menu {
+            display: block;
+            width: auto !important;
+        }
+    }
+}
+
+.side-menu-accordion {
+    > li.menu-item > a {
+        padding: 11px 12px;
+    }
+}

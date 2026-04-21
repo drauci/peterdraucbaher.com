@@ -1,0 +1,17 @@
+
+/* AMP */
+html[amp] .owl-carousel:not(.has-ccols) {
+    display: block;
+}
+html[amp].panel-opened #nav-panel {
+    display: block;
+}
+html[amp].search-toggle-opened #header form.searchform {
+    display: block;
+}
+html[amp] #mini-cart .cart-popup {
+    display: none !important;
+}
+html[amp] #mini-cart .cart-icon::after {
+    content: none;
+}

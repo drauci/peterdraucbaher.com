@@ -1,0 +1,137 @@
+
+
+p.wishlist-empty, table.wishlist_table tbody td.wishlist-empty {
+    margin: 1rem 0
+}
+
+// Wishlist and Cart
+.woocommerce #content table.shop_table.wishlist_table.cart a.remove,
+.shop_table.cart-table a.remove.remove-product,
+.shop_table.review-order a.remove.remove-product {
+    top: -10px;
+    #{$right}: -10px;
+    color: var(--porto-dark-color);
+    &:hover {
+        background: #fff;
+        color: var(--porto-primary-color);
+    }
+}
+
+.blockUI {
+    background: #fff !important;
+    opacity: .5 !important;
+    .shop-loop-before &,
+    .shop-loop-after & {
+        background: none !important;
+    }
+}
+
+.sidebar-content #yith-ajaxsearchform .btn {
+    color: #fff;
+    border-width: 1px;
+    background: var(--porto-primary-color);
+}
+
+.sidebar-content .autocomplete-suggestions {
+    padding-top: 0;
+    padding-bottom: 0;
+}
+
+.sidebar-content .autocomplete-suggestion {
+    padding-#{$left}: 8px;
+    padding-#{$right}: 8px;
+}
+
+
+
+.woocommerce .wishlist-title a.btn,
+.wishlist_table .button,
+.woocommerce .hidden-title-form a.btn,
+.woocommerce .hidden-title-form input[type="submit"] {
+    color: #fff;
+    vertical-align: middle;
+    font-size: .8rem;
+    line-height: 1.5
+}
+
+
+#header .my-wishlist, #header .my-account, #header .yith-woocompare-open {
+    display: inline-block;
+    font-size: 26px;
+    vertical-align: middle;
+}
+
+#header .my-wishlist,
+#header .yith-woocompare-open {
+    position: relative;
+}
+.wishlist_table td.product-thumbnail > div,
+.shop_table.cart-table .product-thumbnail > div {
+    width: 80px;
+    @media #{$screen-medium} {
+        margin: 0 auto;
+    }
+}
+
+.wishlist-popup {
+    position: fixed;
+    top: 0;
+    height: 100%;
+    width: 300px;
+    #{$right}: 0;
+    z-index: 1005;
+    padding: 1.5rem 1.25rem;
+    background: var(--porto-normal-bg);
+    box-shadow: 0 5px 8px rgba(0,0,0,.15);
+    font-size: .8125rem;
+    text-align: $left;
+    min-height: 100vh;  
+    @if $rtl == 1 {
+        transform: translateX(-105%);
+    } @else {
+        transform: translateX(105%);
+    }
+    
+    transition: transform .35s;
+
+    .minicart-opened & {
+        transform: translateX(0);
+    }
+
+    .product_list_widget {
+        margin: 0 0 1.25rem;
+
+        li {
+            padding: 1.25rem 0;
+            border-bottom: 1px solid var(--porto-gray-2)
+        }
+    }
+
+    .product-details {
+        padding-#{$right}: 1rem;
+        position: static;
+
+        .amount {
+            font-size: 1.05em;
+            font-weight: 400;
+        }
+    }
+
+    .remove_from_wishlist.remove {
+        top: 10px;
+        #{$right}: -8px;
+        cursor: pointer;
+    }
+
+    .btn {
+        letter-spacing: .25em;
+        padding: .8125rem 0;
+        border-radius: 2px
+    }
+    .empty-msg {
+        padding: 8px 10px;
+    }
+}
+.yith_wcwl_wishlist_footer .yith-wcwl-share.page-share {
+    float: unset;
+}

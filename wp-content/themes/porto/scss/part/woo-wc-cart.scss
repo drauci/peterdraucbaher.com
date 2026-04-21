@@ -1,0 +1,27 @@
+div.wc-block-cart.is-large .wc-block-cart-items th,
+div.wc-block-cart.is-large .wc-block-cart__totals-title {
+    color: var(--porto-heading-color);
+    font-size: 16px;
+}
+
+body:not(.woocommerce-block-theme-has-button-styles) :is(div.wc-block-checkout,div.wc-block-cart) .wc-block-components-button:not(.is-link).wp-element-button {
+    background-color: var(--porto-primary-color);
+    border-color: var(--porto-primary-color);
+    color: var(--porto-primary-color-inverse);
+}
+
+.wc-block-components-product-name {
+    color: var(--porto-heading-color);
+}
+.wc-block-components-totals-item__label {
+    color: var(--porto-heading-color);
+}
+body .wc-block-components-totals-footer-item-tax-value {
+    color: var(--porto-primary-color)
+}
+.wp-block-woocommerce-empty-cart-block hr {
+    height: auto;
+}
+table.wc-block-cart-items {
+    border-collapse: separate;
+}

@@ -1,0 +1,31 @@
+// DIRECTIONAL
+// ---------------------------------------------------------------
+$rtl: 0 !default;
+$dir: ltr !default;
+
+@import "../theme/theme-imports";
+
+body.porto-dm-slider {
+    .owl-carousel:not(.owl-loaded) {
+        overflow-x: auto !important;
+        -webkit-overflow-scrolling: touch;
+        &::-webkit-scrollbar {
+            height: 7px;
+            width: 4px;
+        }
+        &::-webkit-scrollbar-thumb {
+            margin-#{$right}: 2px;
+            background: rgba(#000, 0);
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background .3s;
+        }
+
+        &:hover::-webkit-scrollbar-thumb {
+            background: rgba(#000, 0.25);
+        }
+    }
+    .product-thumbnails {
+        display: none;
+    }
+}

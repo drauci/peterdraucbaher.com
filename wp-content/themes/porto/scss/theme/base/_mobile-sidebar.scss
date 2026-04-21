@@ -1,0 +1,52 @@
+.mobile-sidebar .sidebar-toggle {
+    display: none;
+    cursor: pointer;
+    width: 40px;
+    height: 40px;
+    position: absolute;
+    #{$right}: -40px;
+    top: 20%;
+    margin: auto;
+    font-size: 17px;
+    line-height: 38px;
+    text-align: center;
+    text-decoration: none;
+    border: 1px solid var(--porto-input-bc);
+    border-#{$left}-width: 0;
+    color: var(--porto-body-color);
+    @include transition(.2s ease-in-out);
+
+    i {
+        &:before {
+            content: $fa-var-sliders-h;
+        }
+    }
+
+    &:hover {
+        color: var(--porto-primary-color);
+        box-shadow: 1px 1px 3px rgba(0, 0, 0, .15);
+    }
+}
+.mobile-sidebar.right-sidebar .sidebar-toggle {
+    #{$left}: -40px;
+    #{$right}: unset;
+    border-width: 1px 0 1px 1px;
+    box-shadow: -1px 1px 3px rgba(0,0,0,0.15);
+}
+.sidebar-overlay {
+    display: none;
+
+    &.active {
+        display: block;
+        background: #000;
+        position: fixed;
+        left: 0;
+        right: 0;
+        top: 0;
+        bottom: 0;
+        z-index: 8999;
+        min-height: 100vh;
+        opacity: .35;
+        @include transition(opacity .2s ease-in-out);
+    }
+}

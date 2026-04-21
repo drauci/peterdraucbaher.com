@@ -1,0 +1,30 @@
+// DIRECTIONAL
+// ---------------------------------------------------------------
+$rtl: 0 !default;
+$dir: ltr !default;
+
+@import "../theme/theme-imports";
+
+// Widget tag cloud - legacy and gutenberg
+.widget {
+    .tagcloud,
+    .wp-block-tag-cloud {
+        margin-top: -.3846em;
+        margin-bottom: -.3846em;
+        a {
+            margin: side-values(.3846em .3846em .3846em 0);
+            padding: .25rem .5rem;
+            line-height: 1;
+            display: inline-block;
+            font-size: 10px !important;
+            text-transform: uppercase;
+            font-weight: 700;
+            border-radius: 10px;
+            background: var(--porto-heading-color);
+            color: var(--porto-body-bg);
+            &:hover {
+                background: var(--porto-heading-light-8);
+            }
+        }
+    }
+}

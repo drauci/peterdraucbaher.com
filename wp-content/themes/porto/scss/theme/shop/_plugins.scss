@@ -1,0 +1,83 @@
+
+#yith-wcwl-popup-message {
+    border-width: 4px 0 0;
+    border-color: var(--porto-primary-color);
+    font-weight: $font-weight-semibold;
+    line-height: 1.5;
+    color: var(--porto-body-color);
+    padding: 15px 20px;
+    width: 250px;
+    margin-left: -125px !important;
+    background: var(--porto-body-bg);
+    border-radius: 0;
+    box-shadow: 0 0 5px rgba(0,0,0,.5);
+}
+.yith-wcan-sort-by ul.orderby li.orderby-wrapper a,
+a.yith-wcan-onsale-button,
+a.yith-wcan-instock-button,
+a.yith-wcan-price-link,
+ul.yith-wcan-list li a {
+    position: relative;
+    padding-#{$left}: 31px !important;
+    &:before, &:after {
+        position: absolute;
+        color: var(--porto-gray-2);
+        top: 50%;
+    }
+    &:after {
+        content: '';
+        left: 0;
+        transform: translateY(-50%);
+        width: 20px;
+        height: 20px;
+        border: 1px solid var(--porto-gray-2);
+        border-radius: 3px;
+    }
+}
+.yith-wcan-sort-by ul.orderby li.orderby-wrapper a.active,
+.yith-wcan-sort-by ul.orderby li.orderby-wrapper a.active,
+a.yith-wcan-onsale-button.active,
+a.yith-wcan-onsale-button:hover,
+a.yith-wcan-instock-button.active,
+a.yith-wcan-instock-button:hover,
+a.yith-wcan-price-link.active,
+a.yith-wcan-price-link:hover,
+ul.yith-wcan-list li.chosen a,
+ul.yith-wcan-list li:hover a {
+    // &:before {
+    //     width: 11px;
+    //     left: 0;
+    //     margin-top: -1px;    
+    //     border-top: 1px solid;
+    //     -webkit-transform: rotateZ(45deg);
+    //     transform: rotateZ(45deg);
+    // }
+    &:after {
+        background-color: var(--porto-heading-color);
+        border-color: var(--porto-heading-color);
+    }
+    &:before {
+        font-family: var(--fa-style-family-classic, "Font Awesome 6 Free");
+        content: '\f00c';
+        font-weight: 900;
+        margin: 0;
+        font-size: 12px;
+        left: 10px;
+        transform: translate(-50%, -50%);
+        color: var(--porto-body-bg);
+        z-index: 1;
+        // height: 11px;
+        // left: 5px;
+        // -webkit-transform: translateY(-50%) rotateZ(45deg);
+        // transform: translateY(-50%) rotateZ(45deg);
+        // border-left: 1px solid;
+    }
+}
+.single_variation_wrap .variations_button {
+    > .warranty_info {
+        margin: side-values(0 .5rem 5px 0);
+    }
+    #wc-stripe-payment-request-wrapper, #wc-stripe-payment-request-button-separator {
+        width: 100%;
+    }
+}

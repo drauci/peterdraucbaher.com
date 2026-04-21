@@ -1,0 +1,32 @@
+// DIRECTIONAL
+// ---------------------------------------------------------------
+$rtl: 0 !default;
+$dir: ltr !default;
+
+@import "../theme/theme-imports";
+
+.widget_calendar {
+    text-align: center;
+    caption {
+        font-weight: 700;
+        text-align: center;
+        margin-bottom: 8px;
+        color: var(--porto-heading-color);
+    }
+    table {
+        width: 100%;
+        font-size: .9286em;
+        th,
+        td {
+            vertical-align: middle;
+        }
+        td#prev {
+            text-align: $left;
+            padding: 8px 0;
+        }
+        td#next {
+            text-align: $right;
+            padding: 8px 0;
+        }
+    }
+}

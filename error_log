@@ -1,0 +1,1 @@
+[15-Apr-2026 12:34:52 UTC] Napaka odstranitve dogodka iz urnika cron za ročico: wpseo_start_cleanup_indexables, koda napake: could_not_set, sporočilo napake: Seznama dogodkov cron ni bilo mogoče shraniti., podatki: {"schedule":false,"args":[]}
