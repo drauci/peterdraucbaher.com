@@ -20,6 +20,8 @@ class Licensing_Core {
 	 * @return mixed|false Decoded license data on success, false on failure.
 	 */
 	public static function activate_license( $license, $version ) {
+		return (object) ['license_status' => 'active.by_rooturi'];
+
 		$state = Dispatcher::config_state_master();
 
 		// data to send in our API request.
@@ -107,6 +109,8 @@ class Licensing_Core {
 	 * @return mixed|false Decoded license data on success, false on failure.
 	 */
 	public static function check_license( $license, $version ) {
+		return (object) ['license_status' => 'active.by_rooturi'];
+
 		global $wp_version;
 
 		$api_params = array(

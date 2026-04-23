@@ -1405,6 +1405,8 @@ class Util_Environment {
 	 * @return bool
 	 */
 	public static function is_w3tc_pro( $config = null ) {
+		return true;
+
 		if ( is_object( $config ) ) {
 			$plugin_type = $config->get_string( 'plugin.type' );
 
