@@ -1,5 +1,5 @@
 <?php exit; ?>{
-    "version": "2.9.4",
+    "version": "2.9.2",
     "cluster.messagebus.debug": false,
     "cluster.messagebus.enabled": false,
     "cluster.messagebus.sns.region": "",
@@ -175,9 +175,9 @@
     "pgcache.compatibility": false,
     "pgcache.remove_charset": false,
     "pgcache.accept.uri": [
-        "sitemap(_index)?\\.xml(\\.gz)?",
         "([a-z0-9_\\-]+)?sitemap\\.xsl",
-        "[a-z0-9_\\-]+-sitemap([0-9]+)?\\.xml(\\.gz)?"
+        "[a-z0-9_\\-]+-sitemap([0-9]+)?\\.xml(\\.gz)?",
+        "sitemap(_index)?\\.xml(\\.gz)?"
     ],
     "pgcache.accept.files": [
         "wp-comments-popup.php",
@@ -296,8 +296,8 @@
     "pgcache.reject.logged_roles": false,
     "pgcache.reject.roles": [],
     "pgcache.reject.uri": [
-        "wp-.*\\.php",
-        "index\\.php"
+        "index\\.php",
+        "wp-.*\\.php"
     ],
     "pgcache.reject.categories": [],
     "pgcache.reject.tags": [],
@@ -308,7 +308,7 @@
         "wptouch_switch_toggle"
     ],
     "pgcache.reject.request_head": false,
-    "pgcache.purge.front_page": false,
+    "pgcache.purge.front_page": true,
     "pgcache.purge.home": true,
     "pgcache.purge.post": true,
     "pgcache.purge.comments": false,
@@ -415,9 +415,9 @@
     "minify.css.engine": "css",
     "minify.css.method": "both",
     "minify.css.http2push": false,
-    "minify.css.strip.comments": false,
-    "minify.css.strip.crlf": false,
-    "minify.css.embed": false,
+    "minify.css.strip.comments": true,
+    "minify.css.strip.crlf": true,
+    "minify.css.embed": true,
     "minify.css.imports": "",
     "minify.css.groups": [],
     "minify.js.http2push": false,
@@ -477,7 +477,7 @@
     "cdn.enabled": false,
     "cdn.debug": false,
     "cdn.flush_manually": false,
-    "cdn.engine": "",
+    "cdn.engine": "google_drive",
     "cdn.uploads.enable": true,
     "cdn.includes.enable": true,
     "cdn.includes.files": "*.css;*.js;*.gif;*.png;*.jpg;*.xml",
@@ -1017,8 +1017,8 @@
     },
     "extension.imageservice": "0",
     "page": "w3tc_general",
-    "_wpnonce": "0d0cffce1e",
-    "_wp_http_referer": "\/wp-admin\/admin.php?page=w3tc_general",
+    "_wpnonce": "c28e8ca2dd",
+    "_wp_http_referer": "\/wp-admin\/admin.php?page=w3tc_general&w3tc_message=69e8dc4d8663b&w3tc_note=flush_minify",
     "w3tc_save_options": "Save Settings",
     "opcache.engine": "OPcache",
     "opcache.validate_timestamps": "1",
@@ -1030,5 +1030,10 @@
     "extension.user-experience-oembed": "0",
     "file_locking": "0",
     "file_nfs": "0",
-    "minify.wp_cron": "0"
+    "minify.wp_cron": "0",
+    "pgcache.wp_cron": "0",
+    "pgcache.bad_behavior_path": "",
+    "newrelic": {
+        "monitoring_type": "apm"
+    }
 }
