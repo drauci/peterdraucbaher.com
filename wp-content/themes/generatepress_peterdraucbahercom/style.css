@@ -13,9 +13,35 @@ body {
     background-color: white !important;
 }
 
+.moove-gdpr-infobar-allow-all {
+    color: black !important;
+}
+
 .site-content-slider {
     padding-left: 40px;
 }
+
+/* Prisili slider, da postane viden takoj, brez JS animacije */
+.n2-ss-slider {
+    visibility: visible !important;
+    opacity: 1 !important;
+}
+
+/* Odstrani belo ali sivo ozadje, ki se pojavi pred sliko */
+.n2-ss-slider-1, .n2-ss-slide {
+    background-image: none !important;
+    background-color: transparent !important;
+}
+
+/* Če ima slika v sliderju razred 'lazyload', jo prisili v takojšen prikaz */
+.n2-ss-slider img.lazyload {
+    display: block !important;
+    opacity: 1 !important;
+}
+
+
+
+
 
 /* --- 2. STRUKTURA GLAVE (HEADER) --- */
 .site-header {
@@ -204,21 +230,25 @@ lite-youtube {
     margin-top:15px;
     margin-left:15px;
     margin-bottom:15px;
+    
 }
+
+.videoDiv {
+        width: 380px;
+}
+
 @media (max-width: 768px) {
     .iframeVideoDiv {
         width: 100% !important;
     }
-    padding-right: 15px;
-    float: none !important;
-    align-items: start;
+    
     .videoDiv {
-        width: 100% !important;
+        width: 300px !important;
+         float: left;
+         clear:both;
     }
     .header-widget {
         display: none;
     }
-    .site-content-slider {
-        padding-left: 30px;
-    }
 }
+
