@@ -1,0 +1,16 @@
+
+# BEGIN WPForms
+# Direktive (vrstice) med "BEGIN WPForms" in "END WPForms" so dinamično
+# ustvarjene, in bi se smele spreminjati zgolj preko WordPressovih filtrov.
+# Vse spremembe direktiv med tema označevalnikoma bodo prepisane.
+# Disable access for any file in the cache dir.
+# Apache 2.2
+<IfModule !authz_core_module>
+	Deny from all
+</IfModule>
+
+# Apache 2.4+
+<IfModule authz_core_module>
+	Require all denied
+</IfModule>
+# END WPForms
