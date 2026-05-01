@@ -5,7 +5,8 @@
       <sourceFolder url="file://$MODULE_DIR$/wp-content/plugins" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/wp-content/plugins/elementor-pro" isTestSource="false" packagePrefix="ElementorPro" />
       <sourceFolder url="file://$MODULE_DIR$/wp-content/plugins/elementor/includes" isTestSource="false" packagePrefix="Elementor" />
-      <sourceFolder url="file://$MODULE_DIR$/wp-content/plugins/multisite-global-media-release/src" isTestSource="false" packagePrefix="MultisiteGlobalMedia" />
+      <sourceFolder url="file://$MODULE_DIR$/wp-content/plugins/resmushit-image-optimizer/classes" isTestSource="false" packagePrefix="Resmush" />
+      <sourceFolder url="file://$MODULE_DIR$/wp-content/plugins/rocket-lazy-load/src" isTestSource="false" packagePrefix="RocketLazyLoadPlugin" />
       <sourceFolder url="file://$MODULE_DIR$/wp-content/plugins/w3-total-cache" isTestSource="false" packagePrefix="W3TC" />
       <sourceFolder url="file://$MODULE_DIR$/wp-content/plugins/w3-total-cache/extension-example" isTestSource="false" packagePrefix="W3TCExample" />
       <sourceFolder url="file://$MODULE_DIR$/wp-content/plugins/w3-total-cache/inc" isTestSource="false" packagePrefix="W3TC" />

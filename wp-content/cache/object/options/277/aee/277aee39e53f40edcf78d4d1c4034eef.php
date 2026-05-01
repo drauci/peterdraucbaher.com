@@ -1,1 +1,0 @@
-y—ﬂi<?php exit; ?>a:2:{s:7:"content";s:296:"{"common.install":1776275619,"common.install_version":"2.9.4","tasks.generic.last_run_version":"2.9.4","tasks.last_run_version":null,"tasks.admin.last_run_version":"2.9.4","license.status":"no_key","license.next_check":1776707620,"license.terms":"","license.paypal_billing_update_required":false}";s:15:"key_version_all";i:1;}
