@@ -9,22 +9,20 @@ add_action( 'generate_after_header', function() {
         return;
     }
     ?>
-    <div class="grid-container">
-        <div class="site-content site-content-slider" style="padding-bottom: 0; padding-top: 0;">
+        <div class="site-content">
             <?php
             if ( function_exists('pll_current_language') ) {
                 $lang = pll_current_language();
                 if ( $lang == 'sl' ) {
-                    echo do_shortcode( '[smartslider3 slider="2"]' );
+                    echo do_shortcode( '[metaslider id="1451"]' );
                 } elseif ( $lang == 'en' ) {
-                    echo do_shortcode( '[smartslider3 slider="3"]' );
+                    echo do_shortcode( '[metaslider id="1459"]' );
                 }
             } else {
-                echo do_shortcode( '[smartslider3 slider="2"]' );
+                echo do_shortcode( '[metaslider id="1451"]' );
             }
             ?>
         </div>
-    </div>
     <?php
 } );
 

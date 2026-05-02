@@ -1,0 +1,1 @@
+This file is used to ensure lyteCache.php will never redirect the client to the YouTube servers, even if there is an error serving or caching the thumbnail).

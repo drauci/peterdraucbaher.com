@@ -40,14 +40,11 @@ body {
 }
 
 
-
-
-
 /* --- 2. STRUKTURA GLAVE (HEADER) --- */
 .site-header {
     background-color: #ffffff !important;
-    border-bottom: 1px solid #eeeeee;
 }
+
 
 .inside-header {
     display: flex;
@@ -57,7 +54,6 @@ body {
     padding-bottom: 0 !important;
     padding-right: 0 !important;
 }
-
 /* --- 3. NAVIGACIJA (Zgornji nivo) --- */
 .main-navigation .main-nav ul li a {
     color: #000000 !important;
@@ -247,6 +243,16 @@ lite-youtube {
          float: left;
          clear:both;
     }
+    
+    /* Uporabimo bolj specifičen selektor in !important za zagotovilo */
+    .metaslider.ms-theme-bitono .flexslider .flex-direction-nav a,
+    .metaslider.ms-theme-bitono .flexslider .flex-direction-nav a::before {
+        width: 28px !important;
+        height: 28px !important;
+        line-height: 28px !important; /* Centriranje ikone znotraj gumba */
+        font-size: 14px !important;   /* Zmanjšanje same puščice/ikone */
+    }
+    
     .header-widget {
         display: none;
     }

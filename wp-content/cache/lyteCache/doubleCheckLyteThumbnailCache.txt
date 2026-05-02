@@ -1,0 +1,1 @@
+This file is used to ensure lyteCache.php is not abused (prevent hotlinking of cached YouTube thumbnails or lyteCache.php being accessed when local thumbnail caching is not active).
