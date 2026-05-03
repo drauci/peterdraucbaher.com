@@ -1,6 +1,5 @@
-// sw.js - Speči agent Baze Resnice
 self.addEventListener('push', function(event) {
-    let data = { title: 'Baza Resnice', body: 'Novo obvestilo!' };
+    let data = { title: 'peterdraucbaher.com', body: 'Novo obvestilo!' };
 
     if (event.data) {
         try {
