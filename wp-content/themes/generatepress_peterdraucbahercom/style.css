@@ -6,6 +6,7 @@
  Author URI:   https://peterdraucbaher.com
  Template:     generatepress
  Version:      1.0
+ Text Domain:  generatepress_peterdraucbahercom
 */
 
 /* --- 1. OSNOVE --- */
@@ -233,6 +234,43 @@ lite-youtube {
         width: 380px;
 }
 
+/* Osnovni stil za povezave v vsebini */
+.entry-content a, 
+.entry-title a {
+    color: #000; /* Mehka črna */
+    text-decoration: underline; /* Podčrtano za boljšo dostopnost */
+    transition: all 0.2s ease-in-out;
+}
+
+/* Stil ob prehodu z miško (Hover) */
+.entry-content a:hover, 
+.entry-title a:hover {
+    color: #FCD800 !important;
+    text-decoration: none;
+    padding: 0 2px; /* Doda malo prostora okoli besedila, ko se obarva rumeno */
+}
+
+
+.lyte .tT {
+    font-family: 'Oswald', sans-serif !important;
+    background-color: #ffff00 !important; /* Rumena podlaga */
+    color: #000000 !important; /* Črna pisava */
+    text-transform: uppercase !important;
+    padding: 10px 15px !important;
+    font-size: 1.4rem !important;
+    line-height: 1.2 !important;
+    top: 10px !important;
+    left: 10px !important;
+    display: inline-block !important;
+    width: auto !important;
+    max-width: 80% !important;
+}
+
+.lyte-wrapper {
+    border: 5px solid #000000; /* Debel črn rob */
+    background-color: #000000;
+    margin-bottom: 25px;
+}
 @media (max-width: 768px) {
     .iframeVideoDiv {
         width: 100% !important;

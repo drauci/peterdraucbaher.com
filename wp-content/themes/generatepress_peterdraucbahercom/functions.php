@@ -135,3 +135,28 @@ add_action('wp_head', function() {
 add_action('wp_footer', function() {
     if (ob_get_level() > 0) ob_end_flush();
 });
+
+add_action('after_setup_theme', function() {
+    load_child_theme_textdomain('generatepress_peterdraucbahercom', get_stylesheet_directory() . '/languages');
+});
+
+add_filter( 'generate_footer_entry_meta_items', function( $items ) {
+    // Če smo na seznamu objav (blog) ali v arhivu (kategorije, oznake)
+    if ( is_home() || is_archive() ) {
+        // Odstrani 'comments-link' iz seznama meta podatkov v nogi objave
+        return array_diff( $items, array( 'comments-link' ) );
+    }
+
+    return $items;
+} );
+
+add_filter( 'generate_header_entry_meta_items', function( $items ) {
+    // Enako preverjanje še za glavo objave (če bi tvoja tema tam kazala komentarje)
+    if ( is_home() || is_archive() ) {
+        return array_diff( $items, array( 'comments-link' ) );
+    }
+
+    return $items;
+} );
+
+
