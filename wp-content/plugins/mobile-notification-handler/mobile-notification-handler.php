@@ -171,20 +171,6 @@ class MobileNotificationHandler {
 
         error_log("Push Signal za članek ID $post_id: " . $naslov);
     }
-
-    /**
-     * GLAVNA PRAZNA FUNKCIJA - Tukaj boš sam sprogramiral pošiljanje
-     */
-    public function poslji_push_logika($naslov, $vsebina) {
-        global $wpdb;
-
-        // Tukaj boš kasneje pridobil žetone iz baze:
-        // $narocniki = $wpdb->get_results("SELECT * FROM $this->table_name");
-
-        // Tukaj boš implementiral WebPush PHP pošiljanje...
-
-        error_log("Push Signal: " . $naslov . " - Funkcija je pripravljena na tvojo kodo.");
-    }
 }
 
 new MobileNotificationHandler();
