@@ -1,4 +1,3 @@
-
 # BEGIN WordPress
 # Direktive (vrstice) med "BEGIN WordPress" in "END WordPress" so dinamično
 # ustvarjene, in bi se smele spreminjati zgolj preko WordPressovih filtrov.
