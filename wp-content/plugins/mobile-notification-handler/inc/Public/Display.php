@@ -87,16 +87,16 @@ class Display {
                 // 1. Nastavitve prevodov
                 const translations = {
                     'sl': {
-                        'title': 'Obvestila o sporočilih',
+                        'title': 'Obvestila',
                         'desc': 'Želite prejemati  obvestila?',
-                        'note': 'Po kliku na spodnji gumb prosimo <strong>potrdite še sistemsko okno</strong> brskalnika zgoraj levo.',
+                        'note': 'Po kliku na spodnji gumb prosimo <strong>potrdite še sistemsko okno</strong> brskalnika.',
                         'btn_yes': 'Vklopi obvestila',
                         'btn_no': 'Ne'
                     },
                     'en': {
-                        'title': 'Push Notifications',
+                        'title': 'Notifications',
                         'desc': 'Would you like to receive notifications?',
-                        'note': 'After clicking the button, please <strong>confirm the browser system prompt</strong> in the top left corner.',
+                        'note': 'After clicking the button, please <strong>confirm the browser system prompt</strong>.',
                         'btn_yes': 'Enable Notifications',
                         'btn_no': 'No'
                     }
