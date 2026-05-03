@@ -23,7 +23,7 @@ class StatsPage {
 
         ?>
         <div class="wrap">
-            <h1><span class="dashicons dashicons-rss"></span> Status mobilne vojske</h1>
+            <h1><span class="dashicons dashicons-rss"></span> Pregled naročnikov</h1>
             <p>Pregled naročnikov in stanja sistema za potisna obvestila.</p>
 
             <div class="welcome-panel" style="padding: 20px; display: flex; gap: 40px; align-items: flex-start;">
