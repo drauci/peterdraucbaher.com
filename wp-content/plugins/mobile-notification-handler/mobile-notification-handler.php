@@ -1,8 +1,8 @@
 <?php
 /**
  * Plugin Name: Mobile Notification Handler
- * Description: Sistem za tiho zbiranje žetonov, ročno sprožitev in avtomatsko pošiljanje ob objavi članka.
- * Version: 1.3
+ * Description: Sistem za zbiranje žetonov z avtomatskim upravljanjem sw.js datoteke.
+ * Version: 1.4
  * Author: Peter Draučbaher
  */
 
@@ -11,27 +11,47 @@ if (!defined('ABSPATH')) exit;
 class MobileNotificationHandler {
 
     private $table_name;
+    private $sw_dest;
+    private $sw_src;
 
     public function __construct() {
         global $wpdb;
         $this->table_name = $wpdb->prefix . 'mobile_push_subscriptions';
+        $this->sw_src = plugin_dir_path(__FILE__) . 'sw.js';
+        $this->sw_dest = ABSPATH . 'sw.js';
 
-        register_activation_hook(__FILE__, array($this, 'install'));
+        // Aktivacija in deaktivacija
+        register_activation_hook(__FILE__, array($this, 'activation_logic'));
+        register_deactivation_hook(__FILE__, array($this, 'deactivation_logic'));
+
         add_action('rest_api_init', array($this, 'register_endpoints'));
         add_action('admin_menu', array($this, 'add_admin_info'));
         add_action('wp_enqueue_scripts', array($this, 'enqueue_push_script'));
-
-        // 1. Ročna sprožitev preko gumba
         add_action('admin_post_trigger_push', array($this, 'procesiraj_ročno_sprožitev'));
-
-        // 2. Avtomatska sprožitev ob objavi novega članka
         add_action('publish_post', array($this, 'avtomatsko_poslji_ob_objavi'), 10, 2);
     }
 
-    public function install() {
+    /**
+     * LOGIKA OB AKTIVACIJI
+     */
+    public function activation_logic() {
+        $this->install_table();
+        $this->kopiraj_sw_v_root();
+    }
+
+    /**
+     * LOGIKA OB DEAKTIVACIJI
+     */
+    public function deactivation_logic() {
+        $this->pobrisi_sw_iz_roota();
+    }
+
+    private function install_table() {
         global $wpdb;
+        $table_name = $this->table_name; // Uporabi lokalno spremenljivko
         $charset_collate = $wpdb->get_charset_collate();
-        $sql = "CREATE TABLE $this->table_name (
+
+        $sql = "CREATE TABLE $table_name (
             id bigint(20) NOT NULL AUTO_INCREMENT,
             endpoint text NOT NULL,
             p256dh varchar(255) NOT NULL,
@@ -39,15 +59,37 @@ class MobileNotificationHandler {
             user_agent text,
             source varchar(50) DEFAULT 'web',
             created_at datetime DEFAULT CURRENT_TIMESTAMP,
-            PRIMARY KEY  (id),
-            UNIQUE KEY endpoint (endpoint(255))
-        ) $charset_collate;";
+            PRIMARY KEY  (id)
+        ) $charset_collate;"; // Pazi: dva presledka med PRIMARY KEY in (id)
+
         require_once(ABSPATH . 'wp-admin/includes/upgrade.php');
         dbDelta($sql);
 
         if (!get_option('mnh_vapid_public_key')) {
-            update_option('mnh_vapid_public_key', 'BCV_STAVI_TUKAJ_SVOJ_JAVNI_KLJUC');
-            update_option('mnh_vapid_private_key', 'STAVI_TUKAJ_SVOJ_ZASEBNI_KLJUC');
+            update_option('mnh_vapid_public_key', 'BH7HqdsAzZtOSHZ5PG-MSJph5016vBSKuXnkcHhWkJa46uk8rKtI7vXVyzqscIcVErotBLiOSyn95JWk_1UwQXg');
+            update_option('mnh_vapid_private_key', '8E4Ka6f3WybZGv-Iu9XVOJSgBSRUgbO9VEsG2f2kc_4');
+        }
+
+        // Za vsak primer dodaj še to, da preveriš, če se je koda sploh izvedla
+        error_log("MNH install_table poklicana za tabelo: $table_name");
+    }
+
+    private function kopiraj_sw_v_root() {
+        if (!file_exists($this->sw_src)) {
+            wp_die('Napaka: Datoteka sw.js ne obstaja v mapi vtičnika. Prosim, dodaj jo pred aktivacijo.');
+        }
+
+        // Poskus kopiranja
+        $success = @copy($this->sw_src, $this->sw_dest);
+
+        if (!$success) {
+            wp_die('Napaka: Vtičnik ne more kopirati sw.js v korensko mapo (root). Preveri pravice pisanja (permissions) na strežniku za mapo ' . ABSPATH);
+        }
+    }
+
+    private function pobrisi_sw_iz_roota() {
+        if (file_exists($this->sw_dest)) {
+            @unlink($this->sw_dest);
         }
     }
 
@@ -122,54 +164,29 @@ class MobileNotificationHandler {
         echo '<input type="hidden" name="action" value="trigger_push">';
         wp_nonce_field('mnh_trigger_action', 'mnh_nonce');
         echo '<input type="submit" class="button button-primary button-large" value="SPROŽI TESTNO OBVESTILO VSEM" onclick="return confirm(\'Ali si prepričan?\');">';
-        echo '</form></div></div>';
+        echo '</form></div>';
+        echo '<p style="margin-top:20px;">Fizična lokacija sw.js: <code>' . (file_exists($this->sw_dest) ? 'V korenski mapi (V REDU)' : 'Manjka!') . '</code></p>';
+        echo '</div>';
     }
 
     public function procesiraj_ročno_sprožitev() {
         if (!isset($_POST['mnh_nonce']) || !wp_verify_nonce($_POST['mnh_nonce'], 'mnh_trigger_action')) wp_die('Security check failed.');
         if (!current_user_can('manage_options')) wp_die('No permission.');
-
-        // Ročni klic splošne logike
-        $this->poslji_push_logika("Ročni test", "To je testno obvestilo sproženo iz admina.");
-
+        $this->poslji_push_logika("Ročni test", "Test");
         wp_redirect(admin_url('admin.php?page=mnh-stats&status=success'));
         exit;
     }
 
-    /**
-     * Samodejno se sproži IZKLJUČNO ob objavi novega ČLANKA (post)
-     */
     public function avtomatsko_poslji_ob_objavi($ID, $post) {
-        // 1. Preveri, če je tip vsebine 'post' (članek). Če je stran (page), prekini.
-        if ($post->post_type !== 'post') {
-            return;
-        }
-
-        // 2. Prepreči pošiljanje ob revizijah ali če je bilo že poslano
-        if (wp_is_post_revision($ID) || get_post_meta($ID, '_push_sent', true)) {
-            return;
-        }
-
-        // 3. Pošlji gole podatke v tvojo glavno logiko
-        // Pošljemo naslov in ID, da lahko v logiki izvlečeš karkoli (permalink, kategorije...)
+        if ($post->post_type !== 'post') return;
+        if (wp_is_post_revision($ID) || get_post_meta($ID, '_push_sent', true)) return;
         $this->poslji_push_logika($post->post_title, $ID);
-
-        // 4. Označi, da je bilo poslano, da se ne ponovi ob urejanju
         update_post_meta($ID, '_push_sent', '1');
     }
 
-    /**
-     * GLAVNA PRAZNA FUNKCIJA - Tukaj boš sam sprogramiral pošiljanje
-     * $podatek1 = Naslov članka
-     * $podatek2 = ID članka (uporabiš za get_permalink($podatek2))
-     */
     public function poslji_push_logika($naslov, $post_id) {
-        global $wpdb;
-
-        // Tvoja koda pride tukaj...
-        // Primer: $url = get_permalink($post_id);
-
-        error_log("Push Signal za članek ID $post_id: " . $naslov);
+        // Tukaj pride tvoja WebPush koda...
+        error_log("Push Signal sprožen za: " . $naslov);
     }
 }
 
