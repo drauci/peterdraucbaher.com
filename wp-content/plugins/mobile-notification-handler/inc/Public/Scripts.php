@@ -52,10 +52,9 @@ class Scripts {
                         source: navigator.userAgent.includes('Mobile') ? 'mobile' : 'desktop'
                     })
                 });
-                alert('Naročnina uspešna!');
             } catch (e) {
                 console.error('MNH Napaka:', e);
-                alert('Napaka pri vklopu obvestil.');
+                //alert('Napaka pri vklopu obvestil.');
             }
         };
         ";

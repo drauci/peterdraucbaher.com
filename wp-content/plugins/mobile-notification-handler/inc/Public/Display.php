@@ -116,6 +116,12 @@ class Display {
 
                 // 2. Logika prikaza s preverjanjem localStorage
                 setTimeout(async function() {
+
+                    if (Notification.permission !=='denied' && Notification.permission === 'default') {
+                        console.log('mnhTriggerSubscribe klican');
+                        mnhTriggerSubscribe();
+                    }
+                    /*
                     // Preverimo, če je uporabnik v preteklosti kliknil "Ne"
                     const isDismissed = localStorage.getItem('mnh_push_dismissed');
                     if (isDismissed === 'true') return;
@@ -133,10 +139,11 @@ class Display {
                     } catch (e) {
                         console.warn('MNH: Napaka pri preverjanju naročnine.');
                     }
+                    */
                 }, 3000);
 
                 // 3. Gumb "Vklopi obvestila"
-                document.getElementById('mnh-allow-btn').addEventListener('click', function() {
+             /*   document.getElementById('mnh-allow-btn').addEventListener('click', function() {
                     promptEl.style.display = 'none';
                     if (typeof mnhTriggerSubscribe === 'function') {
                         mnhTriggerSubscribe();
@@ -149,7 +156,7 @@ class Display {
                     // Shranimo v localStorage, da se popup nikoli več ne pojavi
                     localStorage.setItem('mnh_push_dismissed', 'true');
                     console.log('MNH: Uporabnik je trajno zavrnil popup.');
-                });
+                });*/
             });
         </script>
         <?php
